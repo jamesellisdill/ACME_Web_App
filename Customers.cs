@@ -11,7 +11,7 @@ namespace ACME_Web_App
     {
         private string name {  get; set; }
         private string address { get; set; }
-        private bool isCapableOfLoading = false;
+        private bool isCapableOfLoading { get; set; }
         private string deliveryHours { get; set; }
 
         public Customers(string name, string address, bool isCapableOfLoading, string deliveryHours)
@@ -21,7 +21,5 @@ namespace ACME_Web_App
             this.isCapableOfLoading = isCapableOfLoading;
             this.deliveryHours = deliveryHours;
         }
-
-        public bool IsCapableOfLoading { get { return isCapableOfLoading; } set { isCapableOfLoading = value; } }
     }
 }
