@@ -12,16 +12,14 @@ namespace ACME_Web_App
         private string name {  get; set; }
         private string address { get; set; }
         private bool isCapableOfLoading = false;
-        private int lowerBoundDeliveryHours { get; set; }
-        private int upperBoundDeliveryHours { get; set; }
+        private string DeliveryHours { get; set; }
 
-        public Customers(string name, string address, bool isCapableOfLoading, int lowerBoundDeliveryHours, int upperBoundDeliveryHours)
+        public Customers(string name, string address, bool isCapableOfLoading, string DeliveryHours)
         {
             this.name = name;
             this.address = address;
             this.isCapableOfLoading = isCapableOfLoading;
-            this.lowerBoundDeliveryHours = lowerBoundDeliveryHours;
-            this.upperBoundDeliveryHours = upperBoundDeliveryHours;
+            this.DeliveryHours = DeliveryHours;
         }
 
         public bool IsCapableOfLoading { get { return isCapableOfLoading; } set { isCapableOfLoading = value; } }
