@@ -31,7 +31,7 @@ namespace Acme_Distribution_Database
         {
             MasterProductList product;
 
-            //we manually add each item in the LinkedList
+            //we manually add each item in the List
 
             MPL.Add(product = new MasterProductList(true, "061010", "3D BLUE 12/16 CAN", "3D ENERGY", "3D ENERGY"));
             MPL.Add(product = new MasterProductList(true, "061014", "3D PURPLE 12/16 CAN", "3D ENERGY", "3D ENERGY"));
