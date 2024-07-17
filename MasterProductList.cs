@@ -59,11 +59,6 @@ namespace Acme_Distribution_Database
 
             return status;
         }
-
-
-
-        public MasterProductList() { }
-
         
     }
 }
