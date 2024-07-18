@@ -16,12 +16,11 @@ namespace ACME_Web_App
         public void AddCustomer(Customer customer)
         {
             customers.Add(customer);
-            Console.WriteLine(DisplayCustomerInfo(customer));
         }
 
         public string DisplayCustomerInfo(Customer customer)
         {
-            return $"Name: {customer.Name}\tAddress: {customer.address}\tIs capable of loading? {(customer.isCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {customer.deliveryHours}";
+            return $"Name: {customer.Name}\tAddress: {customer.Address}\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {customer.DeliveryHours}";
         }
 
         public string DisplayAllCustomers()

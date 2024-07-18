@@ -11,9 +11,9 @@ namespace ACME_Web_App
     internal class Customer
     {
         private string name;
-        public string address;
-        public bool isCapableOfLoading;
-        public string deliveryHours;
+        private string address;
+        private bool isCapableOfLoading;
+        private string deliveryHours;
 
         public Customer(string name, string address, bool isCapableOfLoading, string deliveryHours)
         {
@@ -24,5 +24,8 @@ namespace ACME_Web_App
         }
 
         public string Name { get { return name; } }
+        public string Address { get { return address; } }
+        public bool IsCapableOfLoading { get { return isCapableOfLoading; } }
+        public string DeliveryHours { get { return deliveryHours; } }
     }
 }

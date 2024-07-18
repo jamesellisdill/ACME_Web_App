@@ -14,11 +14,15 @@ namespace ACME_Web_App
     public partial class EditCustomerForm : Form
     {
         CustomerManager customerManager = new CustomerManager();
+
         public EditCustomerForm()
         {
             InitializeComponent();
         }
 
-
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = customerManager.DisplayAllCustomers();
+        }
     }
 }
