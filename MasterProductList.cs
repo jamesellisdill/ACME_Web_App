@@ -26,6 +26,26 @@ namespace ACME_Web_App
             this.brand = brand;
         }
 
+        public static string returnStatus(MasterProductList product) 
+        {
+            //since status is a boolean value, we want to return something tangible
+            //if true, we return active
+            //if false, we reutrn restricted
+
+            string status;
+
+            if (product.status == true)
+            {
+                status = "Active";
+            }
+            else
+            {
+                status = "Restricted";
+            }
+
+            return status;
+        }
+
         //static method that generates the first 300 items
         //this method needs to be ran at the start of the program, and we can do this without creating an instance
         //of the object thanks to the static keyword
@@ -336,27 +356,6 @@ namespace ACME_Web_App
             MPL.Add(product = new MasterProductList(, "", "", "", ""));
             MPL.Add(product = new MasterProductList(, "", "", "", ""));
     
-        }
-
-        public static string returnStatus(MasterProductList product) 
-        {
-            //since status is a boolean value, we want to return something tangible
-            //if true, we return active
-            //if false, we reutrn restricted
-
-            string status;
-
-            if (product.status == true)
-            {
-                status = "Active";
-            }
-            else
-            {
-                status = "Restricted";
-            }
-
-            return status;
-        }
-        
+        }        
     }
 }
