@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,12 +15,24 @@ namespace ACME_Web_App
         private bool isCapableOfLoading { get; set; }
         private string deliveryHours { get; set; }
 
+        ArrayList customers = new ArrayList();
+
         public Customer(string name, string address, bool isCapableOfLoading, string deliveryHours)
         {
             this.name = name;
             this.address = address;
             this.isCapableOfLoading = isCapableOfLoading;
             this.deliveryHours = deliveryHours;
+        }
+
+        public void AddCustomer(Customer customer)
+        {
+            customers.Add(customer);
+        }
+
+        public string DisplayCustomerInfo(Customer customer)
+        {
+            return $"Name: {name}\nAddress: {address}\nIs capable of loading? {(isCapableOfLoading ? "Yes" : "No")}\nDelivery Hours: {deliveryHours}";
         }
     }
 }

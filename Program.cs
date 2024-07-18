@@ -16,7 +16,7 @@ namespace ACME_Web_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddCustomerForm()); //Change this to pick which form appears first.
+            Application.Run(new Form1()); //Change this to pick which form appears first.
         }
     }
 }

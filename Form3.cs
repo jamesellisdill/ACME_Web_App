@@ -26,7 +26,9 @@ namespace ACME_Web_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
         }
     }
 }

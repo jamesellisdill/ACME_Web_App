@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,12 @@ namespace ACME_Web_App
 
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
-            // I don't know where to put the Customer[] customers array yet...   - Ellis
+            customer.AddCustomer(customer);
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
