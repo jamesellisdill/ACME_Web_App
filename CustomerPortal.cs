@@ -16,5 +16,12 @@ namespace ACME_Web_App
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PortalScreen form3 = new PortalScreen();
+            form3.Show();
+        }
     }
 }

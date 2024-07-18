@@ -119,6 +119,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\reallysmallbackarrow1.png" />
+    <None Include="Resources\blurlogo2.png" />
     <None Include="Resources\blurlogo1.png" />
     <None Include="Resources\blurlogo.png" />
     <None Include="Resources\logoBlur1.png" />
