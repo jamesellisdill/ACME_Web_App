@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ACME_Web_App
 {
-    public partial class PortalScreen : Form
+    public partial class Form3 : Form
     {
-        public PortalScreen()
+        public Form3()
         {
             InitializeComponent();
         }

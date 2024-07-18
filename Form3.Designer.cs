@@ -1,6 +1,6 @@
 ﻿namespace ACME_Web_App
 {
-    partial class Form3
+    partial class PortalScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -38,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(275, 59);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(220, 66);
@@ -47,6 +48,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(275, 155);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(221, 67);
@@ -57,6 +59,7 @@
             // 
             // button3
             // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(274, 247);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(220, 63);
@@ -67,6 +70,7 @@
             // button4
             // 
             this.button4.BackgroundImage = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Location = new System.Drawing.Point(12, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(55, 32);
@@ -83,7 +87,7 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form3
+            // PortalScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,8 +98,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "PortalScreen";
+            this.Text = "Portal Screen";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

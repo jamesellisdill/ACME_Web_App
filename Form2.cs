@@ -29,7 +29,7 @@ namespace ACME_Web_App
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form3 = new Form3();
+            PortalScreen form3 = new PortalScreen();
             form3.Show();
         }
     }

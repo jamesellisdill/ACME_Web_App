@@ -50,6 +50,7 @@
             // button1
             // 
             this.button1.AutoSize = true;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(355, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 50);
@@ -86,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(242, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(249, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 146);
             this.pictureBox1.TabIndex = 1;
@@ -105,7 +106,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Password";
+            this.Text = "Log in Page";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
