@@ -63,6 +63,26 @@ namespace ACME_Web_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blurlogo {
+            get {
+                object obj = ResourceManager.GetObject("blurlogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blurlogo1 {
+            get {
+                object obj = ResourceManager.GetObject("blurlogo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -96,6 +116,16 @@ namespace ACME_Web_App.Properties {
         internal static System.Drawing.Bitmap logoBlur {
             get {
                 object obj = ResourceManager.GetObject("logoBlur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoBlur1 {
+            get {
+                object obj = ResourceManager.GetObject("logoBlur1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
