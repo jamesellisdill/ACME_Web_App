@@ -38,12 +38,14 @@
             this.deliveryHoursTextBox = new System.Windows.Forms.TextBox();
             this.isCapableOfLoadingCheckBox = new System.Windows.Forms.CheckBox();
             this.addCustomerButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(330, 146);
+            this.nameLabel.Location = new System.Drawing.Point(175, 91);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(35, 13);
             this.nameLabel.TabIndex = 0;
@@ -52,7 +54,7 @@
             // addressLabel
             // 
             this.addressLabel.AutoSize = true;
-            this.addressLabel.Location = new System.Drawing.Point(320, 176);
+            this.addressLabel.Location = new System.Drawing.Point(165, 142);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(45, 13);
             this.addressLabel.TabIndex = 1;
@@ -61,7 +63,7 @@
             // isCapableOfLoadingLabel
             // 
             this.isCapableOfLoadingLabel.AutoSize = true;
-            this.isCapableOfLoadingLabel.Location = new System.Drawing.Point(254, 206);
+            this.isCapableOfLoadingLabel.Location = new System.Drawing.Point(135, 186);
             this.isCapableOfLoadingLabel.Name = "isCapableOfLoadingLabel";
             this.isCapableOfLoadingLabel.Size = new System.Drawing.Size(111, 13);
             this.isCapableOfLoadingLabel.TabIndex = 2;
@@ -70,7 +72,7 @@
             // deliveryHoursLabel
             // 
             this.deliveryHoursLabel.AutoSize = true;
-            this.deliveryHoursLabel.Location = new System.Drawing.Point(289, 235);
+            this.deliveryHoursLabel.Location = new System.Drawing.Point(165, 238);
             this.deliveryHoursLabel.Name = "deliveryHoursLabel";
             this.deliveryHoursLabel.Size = new System.Drawing.Size(76, 13);
             this.deliveryHoursLabel.TabIndex = 3;
@@ -78,7 +80,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(372, 146);
+            this.nameTextBox.Location = new System.Drawing.Point(315, 91);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 4;
@@ -86,14 +88,14 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(371, 176);
+            this.addressTextBox.Location = new System.Drawing.Point(315, 139);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(100, 20);
             this.addressTextBox.TabIndex = 5;
             // 
             // deliveryHoursTextBox
             // 
-            this.deliveryHoursTextBox.Location = new System.Drawing.Point(372, 235);
+            this.deliveryHoursTextBox.Location = new System.Drawing.Point(308, 231);
             this.deliveryHoursTextBox.Name = "deliveryHoursTextBox";
             this.deliveryHoursTextBox.Size = new System.Drawing.Size(100, 20);
             this.deliveryHoursTextBox.TabIndex = 6;
@@ -101,7 +103,7 @@
             // isCapableOfLoadingCheckBox
             // 
             this.isCapableOfLoadingCheckBox.AutoSize = true;
-            this.isCapableOfLoadingCheckBox.Location = new System.Drawing.Point(372, 206);
+            this.isCapableOfLoadingCheckBox.Location = new System.Drawing.Point(308, 186);
             this.isCapableOfLoadingCheckBox.Name = "isCapableOfLoadingCheckBox";
             this.isCapableOfLoadingCheckBox.Size = new System.Drawing.Size(107, 17);
             this.isCapableOfLoadingCheckBox.TabIndex = 7;
@@ -110,7 +112,7 @@
             // 
             // addCustomerButton
             // 
-            this.addCustomerButton.Location = new System.Drawing.Point(638, 381);
+            this.addCustomerButton.Location = new System.Drawing.Point(311, 273);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(97, 23);
             this.addCustomerButton.TabIndex = 8;
@@ -118,11 +120,32 @@
             this.addCustomerButton.UseVisualStyleBackColor = true;
             this.addCustomerButton.Click += new System.EventHandler(this.addCustomerButton_Click);
             // 
+            // button1
+            // 
+            this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow2;
+            this.button1.Location = new System.Drawing.Point(29, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 31);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(577, 301);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // AddCustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(686, 412);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.addCustomerButton);
             this.Controls.Add(this.isCapableOfLoadingCheckBox);
             this.Controls.Add(this.deliveryHoursTextBox);
@@ -151,5 +174,7 @@
         private System.Windows.Forms.TextBox deliveryHoursTextBox;
         private System.Windows.Forms.CheckBox isCapableOfLoadingCheckBox;
         private System.Windows.Forms.Button addCustomerButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
