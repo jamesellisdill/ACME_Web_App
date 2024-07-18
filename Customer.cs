@@ -10,12 +10,10 @@ namespace ACME_Web_App
 {
     internal class Customer
     {
-        private string name {  get; set; }
-        private string address { get; set; }
-        private bool isCapableOfLoading { get; set; }
-        private string deliveryHours { get; set; }
-
-        public ArrayList customers = new ArrayList();
+        private string name;
+        public string address;
+        public bool isCapableOfLoading;
+        public string deliveryHours;
 
         public Customer(string name, string address, bool isCapableOfLoading, string deliveryHours)
         {
@@ -25,23 +23,6 @@ namespace ACME_Web_App
             this.deliveryHours = deliveryHours;
         }
 
-        public void AddCustomer(Customer customer)
-        {
-            customers.Add(customer);
-        }
-
-        public string DisplayCustomerInfo(Customer customer)
-        {
-            return $"Name: {name}\tAddress: {address}\tIs capable of loading? {(isCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {deliveryHours}";
-        }
-
-        public string DisplayAllCustomers()
-        {
-            foreach (Customer customer in customers)
-            {
-                return DisplayCustomerInfo(customer);
-            }
-            return "\n";
-        }
+        public string Name { get { return name; } }
     }
 }

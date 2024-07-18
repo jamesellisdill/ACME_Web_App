@@ -12,15 +12,15 @@ namespace ACME_Web_App
 {
     public partial class EditCustomerForm : Form
     {
-        Customer customer;
+        CustomerManager customerManager = new CustomerManager();
         public EditCustomerForm()
         {
             InitializeComponent();
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            listBox1.Items.Add(customer.DisplayAllCustomers());
+            textBox1.Text = customerManager.DisplayAllCustomers();
         }
     }
 }

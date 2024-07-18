@@ -13,6 +13,7 @@ namespace ACME_Web_App
 {
     public partial class AddCustomerForm : Form
     {
+        CustomerManager customerManager = new CustomerManager();
         public AddCustomerForm()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace ACME_Web_App
 
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
-            customer.AddCustomer(customer);
+            customerManager.AddCustomer(customer);
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
