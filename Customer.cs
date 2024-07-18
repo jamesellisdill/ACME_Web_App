@@ -15,7 +15,7 @@ namespace ACME_Web_App
         private bool isCapableOfLoading { get; set; }
         private string deliveryHours { get; set; }
 
-        ArrayList customers = new ArrayList();
+        public ArrayList customers = new ArrayList();
 
         public Customer(string name, string address, bool isCapableOfLoading, string deliveryHours)
         {
@@ -33,6 +33,15 @@ namespace ACME_Web_App
         public string DisplayCustomerInfo(Customer customer)
         {
             return $"Name: {name}\nAddress: {address}\nIs capable of loading? {(isCapableOfLoading ? "Yes" : "No")}\nDelivery Hours: {deliveryHours}";
+        }
+
+        public string DisplayAllCustomers()
+        {
+            foreach (Customer customer in customers)
+            {
+                return DisplayCustomerInfo(customer);
+            }
+            return "\n";
         }
     }
 }

@@ -12,6 +12,7 @@ namespace ACME_Web_App
 {
     public partial class EditCustomerForm : Form
     {
+        Customer customer;
         public EditCustomerForm()
         {
             InitializeComponent();
@@ -19,7 +20,7 @@ namespace ACME_Web_App
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            listBox1.Items.Add(customer.DisplayAllCustomers());
         }
     }
 }
