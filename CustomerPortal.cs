@@ -33,7 +33,9 @@ namespace ACME_Web_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            EditCustomerForm editCustomerForm = new EditCustomerForm();
+            editCustomerForm.Show();
         }
     }
 }
