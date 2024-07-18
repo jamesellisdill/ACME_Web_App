@@ -23,5 +23,17 @@ namespace ACME_Web_App
             PortalScreen form3 = new PortalScreen();
             form3.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddCustomerForm addCustomerForm = new AddCustomerForm();
+            addCustomerForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
