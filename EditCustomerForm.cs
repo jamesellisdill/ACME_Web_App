@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ACME_Web_App
 {
@@ -16,11 +17,6 @@ namespace ACME_Web_App
         public EditCustomerForm()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = customerManager.DisplayAllCustomers();
         }
     }
 }
