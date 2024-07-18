@@ -18,9 +18,6 @@ namespace ACME_Web_App
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = customerManager.DisplayAllCustomers();
-        }
+
     }
 }
