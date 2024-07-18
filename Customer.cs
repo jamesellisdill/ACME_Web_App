@@ -7,14 +7,14 @@ using System.Windows.Forms;
 
 namespace ACME_Web_App
 {
-    internal class Customers
+    internal class Customer
     {
         private string name {  get; set; }
         private string address { get; set; }
         private bool isCapableOfLoading { get; set; }
         private string deliveryHours { get; set; }
 
-        public Customers(string name, string address, bool isCapableOfLoading, string deliveryHours)
+        public Customer(string name, string address, bool isCapableOfLoading, string deliveryHours)
         {
             this.name = name;
             this.address = address;
