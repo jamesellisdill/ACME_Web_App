@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -10,11 +10,11 @@ namespace ACME_Web_App
 {
     public class MasterProductList
     {
-      //these are what we felt were the most important to attributes to have for the prototype MPL
+        //these are what we felt were the most important to attributes to have for the prototype MPL
 
-      private bool status;
-      private string ID, item_desc, supplier, brand;
-      public static List<MasterProductList> MPL = new List<MasterProductList>();
+        private bool status;
+        private string ID, item_desc, supplier, brand;
+        public static List<MasterProductList> MPL = new List<MasterProductList>();
 
         //overloaded constructor
         public MasterProductList(bool status, string ID, string item_desc, string supplier, string brand)
@@ -27,8 +27,8 @@ namespace ACME_Web_App
         }
 
         //methods needs a product from the MPL list to be passed in, in order to return relevant data
-        
-        public string returnStatus(MasterProductList product) 
+
+        public static string returnStatus(MasterProductList product)
         {
             //since status is a boolean value, we want to return something tangible
             //if true, we return active
@@ -47,56 +47,40 @@ namespace ACME_Web_App
 
             return status;
         }
-        
 
-        public string returnID(MasterProductList product) 
+
+        public static string returnID(MasterProductList product)
         {
             //returns ID no. as string
 
             return product.ID;
         }
-        
 
-        public string returnDesc(MasterProductList product) 
+
+        public static string returnDesc(MasterProductList product)
         {
             //returns item description as string
 
             return product.item_desc;
         }
-        
 
-        public string returnSupplier(MasterProductList product) 
+
+        public static string returnSupplier(MasterProductList product)
         {
             //returns supplier name as string
 
             return product.supplier;
         }
-        
 
-        public string returnBrand(MasterProductList product) 
+
+        public static string returnBrand(MasterProductList product)
         {
             //returns brand name as string
 
             return product.brand;
         }
 
-        
-        public static void addProduct(MasterProductList product)
-        {
-            //adds a new product to the Master Product List
-            
-            MPL.Add(product);
-        }
 
-        
-        public static void removeProduct(MasterProductList product)
-        {
-            //removes a product from the Master Product List
-
-            MPL.Remove(product);
-        }
-        
-       
         //static method that generates the first 300 items
         //this method needs to be ran at the start of the program, and we can do this without creating an instance
         //of the object thanks to the static keyword
@@ -406,7 +390,7 @@ namespace ACME_Web_App
             MPL.Add(product = new MasterProductList(true, "003100", "101CC CHAR12/16.9BOX", "ANHEUSER-BUSCH", "CUPCAKE"));
             MPL.Add(product = new MasterProductList(true, "003101", "101CC PINO 12/16.9BO", "ANHEUSER-BUSCH", "CUPCAKE"));
             MPL.Add(product = new MasterProductList(true, "000300", "CW SPIRITS SPRITPOP 10/12", "ANHEUSER-BUSCH", "CUTWATER"));
-        
-        }        
+
+        }
     }
 }
