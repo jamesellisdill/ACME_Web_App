@@ -30,5 +30,10 @@ namespace ACME_Web_App
             CustomerPortal customerPortal = new CustomerPortal();
             customerPortal.Show();
         }
+
+        private void PortalScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
