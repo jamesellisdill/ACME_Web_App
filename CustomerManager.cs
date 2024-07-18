@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace ACME_Web_App
 {
-    internal class CustomerManager
+    public class CustomerManager
     {
         ArrayList customers = new ArrayList();
 

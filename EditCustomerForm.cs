@@ -13,14 +13,10 @@ namespace ACME_Web_App
 {
     public partial class EditCustomerForm : Form
     {
+        AddCustomerForm addCustomerForm = new AddCustomerForm();
         public EditCustomerForm()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

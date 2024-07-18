@@ -13,7 +13,8 @@ namespace ACME_Web_App
 {
     public partial class AddCustomerForm : Form
     {
-        CustomerManager customerManager = new CustomerManager();
+        public CustomerManager customerManager = new CustomerManager();
+
         public AddCustomerForm()
         {
             InitializeComponent();
