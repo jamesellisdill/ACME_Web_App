@@ -28,7 +28,7 @@ namespace ACME_Web_App
 
         //methods needs a product from the MPL list to be passed in, in order to return relevant data
         
-        public static string returnStatus(MasterProductList product) 
+        public string returnStatus(MasterProductList product) 
         {
             //since status is a boolean value, we want to return something tangible
             //if true, we return active
@@ -47,9 +47,56 @@ namespace ACME_Web_App
 
             return status;
         }
-
-        //start here
         
+
+        public string returnID(MasterProductList product) 
+        {
+            //returns ID no. as string
+
+            return product.ID;
+        }
+        
+
+        public string returnDesc(MasterProductList product) 
+        {
+            //returns item description as string
+
+            return product.item_desc;
+        }
+        
+
+        public string returnSupplier(MasterProductList product) 
+        {
+            //returns supplier name as string
+
+            return product.supplier;
+        }
+        
+
+        public string returnBrand(MasterProductList product) 
+        {
+            //returns brand name as string
+
+            return product.brand;
+        }
+
+        
+        public static void addProduct(MasterProductList product)
+        {
+            //adds a new product to the Master Product List
+            
+            MPL.Add(product);
+        }
+
+        
+        public static void removeProduct(MasterProductList product)
+        {
+            //removes a product from the Master Product List
+
+            MPL.Remove(product);
+        }
+        
+       
         //static method that generates the first 300 items
         //this method needs to be ran at the start of the program, and we can do this without creating an instance
         //of the object thanks to the static keyword
