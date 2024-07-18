@@ -344,21 +344,21 @@ namespace ACME_Web_App
             MPL.Add(product = new MasterProductList(true, "040474", "BUSCH LT 2/12 CAN", "ANHEUSER-BUSCH", "BUSCH"));
             MPL.Add(product = new MasterProductList(false, "040475", "BUSCH LT 24/16 6/4 CANS", "ANHEUSER-BUSCH", "BUSCH"));
             MPL.Add(product = new MasterProductList(false, "040476", "BUSCH LT 15/16 CALNR", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "BUSCH"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "CUPCAKE"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "CUPCAKE"));
-            MPL.Add(product = new MasterProductList(, "", "", "ANHEUSER-BUSCH", "CUTWATER"));
+            MPL.Add(product = new MasterProductList(true, "040481", "BUSCH LT 24/16 3/8 CAN", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040487", "BUSCH LT 18/12LNNR", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040488", "BUSCH LT 18PK TT", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040492", "BUSCH LT SUITCASE", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(false, "040499", "BUSCH LT 24/12 PREPRNT", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040516", "BUSCH ICE 15/25TT", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040524", "BUSCH ICE 2/12 CAN", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040525", "BUSCH ICE 24/16 6/4TT", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "040542", "BUSCH ICE SUITCASE", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(false, "060559", "BUSCH N/A 12 OZ CAN", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "060560", "BUSCH N/A 2/12TT", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "090945", "BUSCH LT 1/2BBL", "ANHEUSER-BUSCH", "BUSCH"));
+            MPL.Add(product = new MasterProductList(true, "003100", "101CC CHAR12/16.9BOX", "ANHEUSER-BUSCH", "CUPCAKE"));
+            MPL.Add(product = new MasterProductList(true, "003101", "101CC PINO 12/16.9BO", "ANHEUSER-BUSCH", "CUPCAKE"));
+            MPL.Add(product = new MasterProductList(true, "000300", "CW SPIRITS SPRITPOP 10/12", "ANHEUSER-BUSCH", "CUTWATER"));
         
         }        
     }
