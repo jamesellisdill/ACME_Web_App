@@ -32,7 +32,7 @@ namespace ACME_Web_App
 
         public string DisplayCustomerInfo(Customer customer)
         {
-            return $"Name: {name}\nAddress: {address}\nIs capable of loading? {(isCapableOfLoading ? "Yes" : "No")}\nDelivery Hours: {deliveryHours}";
+            return $"Name: {name}\tAddress: {address}\tIs capable of loading? {(isCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {deliveryHours}";
         }
 
         public string DisplayAllCustomers()
