@@ -16,6 +16,7 @@ namespace ACME_Web_App
         public void AddCustomer(Customer customer)
         {
             customers.Add(customer);
+            Console.WriteLine(DisplayAllCustomers());
         }
 
         public string DisplayCustomerInfo(Customer customer)
@@ -25,11 +26,13 @@ namespace ACME_Web_App
 
         public string DisplayAllCustomers()
         {
+            string list = "";
             foreach (Customer customer in customers)
             {
-                return DisplayCustomerInfo(customer);
+                list += DisplayCustomerInfo(customer);
+                list += "\n";
             }
-            return "\n";
+            return list;
         }
     }
 }
