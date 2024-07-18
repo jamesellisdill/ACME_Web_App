@@ -20,10 +20,7 @@ namespace ACME_Web_App
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           foreach(Customer customer in customer.customers)
-            {
-                listBox1.Items.Add("Item " + customer.DisplayCustomerInfo(customer));
-            }
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
