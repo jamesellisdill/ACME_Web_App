@@ -16,5 +16,17 @@ namespace ACME_Web_App
         {
             InitializeComponent();
         }
+
+        private void addCustomerButton_Click(object sender, EventArgs e)
+        {
+            string name = nameTextBox.Text;
+            string address = addressTextBox.Text;
+            bool isCapableOfLoading = isCapableOfLoadingCheckBox.Checked;
+            string deliveryHours = deliveryHoursTextBox.Text;
+
+            Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
+
+            // I don't know where to put the Customer[] customers array yet...   - Ellis
+        }
     }
 }

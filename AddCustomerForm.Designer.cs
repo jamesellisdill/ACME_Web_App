@@ -36,6 +36,7 @@
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.deliveryHoursTextBox = new System.Windows.Forms.TextBox();
             this.isCapableOfLoadingCheckBox = new System.Windows.Forms.CheckBox();
+            this.addCustomerButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -105,11 +106,22 @@
             this.isCapableOfLoadingCheckBox.Text = "Check box if yes.";
             this.isCapableOfLoadingCheckBox.UseVisualStyleBackColor = true;
             // 
+            // addCustomerButton
+            // 
+            this.addCustomerButton.Location = new System.Drawing.Point(638, 381);
+            this.addCustomerButton.Name = "addCustomerButton";
+            this.addCustomerButton.Size = new System.Drawing.Size(97, 23);
+            this.addCustomerButton.TabIndex = 8;
+            this.addCustomerButton.Text = "Add Customer";
+            this.addCustomerButton.UseVisualStyleBackColor = true;
+            this.addCustomerButton.Click += new System.EventHandler(this.addCustomerButton_Click);
+            // 
             // AddCustomerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.addCustomerButton);
             this.Controls.Add(this.isCapableOfLoadingCheckBox);
             this.Controls.Add(this.deliveryHoursTextBox);
             this.Controls.Add(this.addressTextBox);
@@ -135,5 +147,6 @@
         private System.Windows.Forms.TextBox addressTextBox;
         private System.Windows.Forms.TextBox deliveryHoursTextBox;
         private System.Windows.Forms.CheckBox isCapableOfLoadingCheckBox;
+        private System.Windows.Forms.Button addCustomerButton;
     }
 }
