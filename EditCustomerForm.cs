@@ -20,7 +20,17 @@ namespace ACME_Web_App
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1.Items.Add(customer.DisplayAllCustomers());
+           foreach(Customer customer in customer.customers)
+            {
+                listBox1.Items.Add("Item " + customer.DisplayCustomerInfo(customer));
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
         }
     }
 }
