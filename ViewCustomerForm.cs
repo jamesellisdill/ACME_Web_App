@@ -7,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ACME_Web_App
 {
-    public partial class EditCustomerForm : Form
+    public partial class ViewCustomerForm : Form
     {
-      
-
-        public EditCustomerForm()
+        public ViewCustomerForm()
         {
             InitializeComponent();
-
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,11 +22,6 @@ namespace ACME_Web_App
             refreshLabel.Hide();
             Console.WriteLine(CustomerManager.DisplayAllCustomers());
             textBox1.Text = CustomerManager.DisplayAllCustomers();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

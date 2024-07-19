@@ -20,7 +20,7 @@ namespace ACME_Web_App
 
         public static string DisplayCustomerInfo(Customer customer)
         {
-            return $"Name: {customer.Name}\tAddress: {customer.Address}\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {customer.DeliveryHours}";
+            return $"Name: {customer.Name}\t\tAddress: {customer.Address}\t\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\t\tDelivery Hours: {customer.DeliveryHours}";
         }
 
         public static string DisplayAllCustomers()
@@ -29,7 +29,7 @@ namespace ACME_Web_App
             foreach (Customer customer in customers)
             {
                 list += DisplayCustomerInfo(customer);
-                list += "\n";
+                list += "\r\n";
             }
             return list;
         }

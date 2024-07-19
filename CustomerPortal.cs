@@ -37,5 +37,12 @@ namespace ACME_Web_App
             EditCustomerForm editCustomerForm = new EditCustomerForm();
             editCustomerForm.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewCustomerForm viewCustomerForm = new ViewCustomerForm();
+            viewCustomerForm.Show();
+        }
     }
 }
