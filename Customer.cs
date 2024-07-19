@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace ACME_Web_App
 {
-    public class Customer
+    internal class Customer
     {
         private string name;
         private string address;
