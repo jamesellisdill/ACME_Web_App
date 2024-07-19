@@ -13,8 +13,6 @@ namespace ACME_Web_App
 {
     public partial class AddCustomerForm : Form
     {
-        public CustomerManager customerManager = new CustomerManager();
-
         public AddCustomerForm()
         {
             InitializeComponent();
@@ -29,7 +27,7 @@ namespace ACME_Web_App
 
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
-            customerManager.AddCustomer(customer);
+            customer.AddCustomer(customer);
 
             nameTextBox.Clear();
             addressTextBox.Clear();

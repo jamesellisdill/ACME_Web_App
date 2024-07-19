@@ -53,7 +53,6 @@
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs" />
-    <Compile Include="CustomerManager.cs" />
     <Compile Include="CustomerPortal.cs">
       <SubType>Form</SubType>
     </Compile>

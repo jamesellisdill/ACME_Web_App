@@ -28,9 +28,11 @@ namespace ACME_Web_App
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
+            // Hide the refresh label.
             refreshLabel.Hide();
 
-            foreach (Customer customer in CustomerManager.customers)
+            // Add each customer to the list view and display them.
+            foreach (Customer customer in Customer.customers)
             {
                 ListViewItem customerDetails = new ListViewItem(customer.Name);
                 customerDetails.SubItems.Add(customer.Address);
