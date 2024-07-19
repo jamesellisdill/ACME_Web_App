@@ -31,7 +31,8 @@ namespace ACME_Web_App
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            Console.WriteLine(CustomerManager.DisplayAllCustomers());
+            textBox1.Text = CustomerManager.DisplayAllCustomers();
         }
     }
 }
