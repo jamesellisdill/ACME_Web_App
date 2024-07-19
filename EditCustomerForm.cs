@@ -21,17 +21,5 @@ namespace ACME_Web_App
 
             
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            refreshLabel.Hide();
-            Console.WriteLine(CustomerManager.DisplayAllCustomers());
-            textBox1.Text = CustomerManager.DisplayAllCustomers();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
