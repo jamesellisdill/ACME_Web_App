@@ -27,9 +27,9 @@ namespace ACME_Web_App
         }
 
         // EDITS THE ORDER PASSED IN BY ADDING IN THE PRODUCT PASSED IN. IT USES THE OBJECTS ADD METHOD TO ADD.
-        public void AddToOrder(Order order, ListViewItem item)
+        public void AddToOrder(Order order, Product product)
         {
-            order.AddToOrder(item);
+            order.AddToOrder(product);
         }
 
         // EDITS THE ORDER PASSED IN BY REMOVING IN THE PRODUCT PASSED IN. IT USES THE OBJECTS REMOVE METHOD TO REMOVE.

@@ -10,7 +10,7 @@ namespace ACME_Web_App
     public class Order
     {
         // ATTRIBUTES
-        private List<ListViewItem> order;
+        private List<Product> order;
         private static int orderIDCounter = 6000000;
         private int orderID;
 
@@ -18,13 +18,13 @@ namespace ACME_Web_App
         public Order()
         {
             orderID = orderIDCounter++;
-            order = new List<ListViewItem>();
+            order = new List<Product>();
         }
 
         // ADD PRODUCT TO ORDER
-        public void AddToOrder(ListViewItem item)
+        public void AddToOrder(Product product)
         {
-            order.Add(item);
+            order.Add(product);
         }
 
         // REMOVE PRODUCT FROM ORDER
