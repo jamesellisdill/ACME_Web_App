@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace ACME_Web_App
 {
     // PRODUCT IS THE OBJECT FOR A GIVEN ENTRY IN THE INVENTORY DATABASE
-    class Product
+    public class Product
     {
         // VARS
-        private bool availability; 
+        private bool availability;
         private string id;
         private string description;
         private string supplier;
@@ -33,9 +33,33 @@ namespace ACME_Web_App
         }
 
         // GET STATUS TO SEE IF PRODUCT IS ACTIVE OR RESTRICTED
-        public bool GetStatus()
+        public bool GetAvailability()
         {
             return availability;
+        }
+
+        // GET ID
+        public string GetID()
+        {
+            return id;
+        }
+
+        // GET DESCRIPTION
+        public string GetDescription()
+        {
+            return description;
+        }
+
+        // GET SUPPLIER
+        public string GetSupplier()
+        {
+            return supplier;
+        }
+
+        // GET BRAND
+        public string GetBrand()
+        {
+            return brand;
         }
     }
 }
