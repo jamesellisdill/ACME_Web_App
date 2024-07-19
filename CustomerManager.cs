@@ -11,20 +11,19 @@ namespace ACME_Web_App
 {
     public class CustomerManager
     {
-        ArrayList customers = new ArrayList();
+        public static List<Customer> customers = new List<Customer>();
 
         public void AddCustomer(Customer customer)
         {
             customers.Add(customer);
-            Console.WriteLine(DisplayAllCustomers());
         }
 
-        public string DisplayCustomerInfo(Customer customer)
+        public static string DisplayCustomerInfo(Customer customer)
         {
             return $"Name: {customer.Name}\tAddress: {customer.Address}\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {customer.DeliveryHours}";
         }
 
-        public string DisplayAllCustomers()
+        public static string DisplayAllCustomers()
         {
             string list = "";
             foreach (Customer customer in customers)
