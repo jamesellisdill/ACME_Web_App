@@ -28,9 +28,14 @@ namespace ACME_Web_App
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
+            refreshLabel.Hide();
+
             foreach (Customer customer in CustomerManager.customers)
             {
-                ListViewItem customerDetails = new ListViewItem(CustomerManager.DisplayCustomerInfo(customer));
+                ListViewItem customerDetails = new ListViewItem(customer.Name);
+                customerDetails.SubItems.Add(customer.Address);
+                customerDetails.SubItems.Add($"{(customer.IsCapableOfLoading ? "Yes" : "No")}");
+                customerDetails.SubItems.Add(customer.DeliveryHours);
                 editCustomerView.Items.Add(customerDetails);
             }
         }

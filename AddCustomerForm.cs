@@ -30,6 +30,11 @@ namespace ACME_Web_App
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
             customerManager.AddCustomer(customer);
+
+            nameTextBox.Clear();
+            addressTextBox.Clear();
+            isCapableOfLoadingCheckBox.Checked = false;
+            deliveryHoursTextBox.Clear();
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

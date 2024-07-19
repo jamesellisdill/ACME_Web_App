@@ -44,7 +44,7 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(175, 91);
+            this.nameLabel.Location = new System.Drawing.Point(211, 91);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(35, 13);
             this.nameLabel.TabIndex = 0;
@@ -53,7 +53,7 @@
             // addressLabel
             // 
             this.addressLabel.AutoSize = true;
-            this.addressLabel.Location = new System.Drawing.Point(165, 142);
+            this.addressLabel.Location = new System.Drawing.Point(196, 139);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(45, 13);
             this.addressLabel.TabIndex = 1;
@@ -62,7 +62,7 @@
             // isCapableOfLoadingLabel
             // 
             this.isCapableOfLoadingLabel.AutoSize = true;
-            this.isCapableOfLoadingLabel.Location = new System.Drawing.Point(135, 186);
+            this.isCapableOfLoadingLabel.Location = new System.Drawing.Point(135, 190);
             this.isCapableOfLoadingLabel.Name = "isCapableOfLoadingLabel";
             this.isCapableOfLoadingLabel.Size = new System.Drawing.Size(111, 13);
             this.isCapableOfLoadingLabel.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(315, 91);
+            this.nameTextBox.Location = new System.Drawing.Point(286, 88);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 4;
@@ -87,14 +87,14 @@
             // 
             // addressTextBox
             // 
-            this.addressTextBox.Location = new System.Drawing.Point(315, 139);
+            this.addressTextBox.Location = new System.Drawing.Point(286, 136);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(100, 20);
             this.addressTextBox.TabIndex = 5;
             // 
             // deliveryHoursTextBox
             // 
-            this.deliveryHoursTextBox.Location = new System.Drawing.Point(308, 231);
+            this.deliveryHoursTextBox.Location = new System.Drawing.Point(286, 231);
             this.deliveryHoursTextBox.Name = "deliveryHoursTextBox";
             this.deliveryHoursTextBox.Size = new System.Drawing.Size(100, 20);
             this.deliveryHoursTextBox.TabIndex = 6;
@@ -102,7 +102,7 @@
             // isCapableOfLoadingCheckBox
             // 
             this.isCapableOfLoadingCheckBox.AutoSize = true;
-            this.isCapableOfLoadingCheckBox.Location = new System.Drawing.Point(308, 186);
+            this.isCapableOfLoadingCheckBox.Location = new System.Drawing.Point(286, 189);
             this.isCapableOfLoadingCheckBox.Name = "isCapableOfLoadingCheckBox";
             this.isCapableOfLoadingCheckBox.Size = new System.Drawing.Size(107, 17);
             this.isCapableOfLoadingCheckBox.TabIndex = 7;
@@ -111,7 +111,7 @@
             // 
             // addCustomerButton
             // 
-            this.addCustomerButton.Location = new System.Drawing.Point(546, 348);
+            this.addCustomerButton.Location = new System.Drawing.Point(577, 377);
             this.addCustomerButton.Name = "addCustomerButton";
             this.addCustomerButton.Size = new System.Drawing.Size(97, 23);
             this.addCustomerButton.TabIndex = 8;

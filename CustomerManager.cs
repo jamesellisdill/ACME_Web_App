@@ -23,7 +23,7 @@ namespace ACME_Web_App
             return $"Name: {customer.Name}\t\tAddress: {customer.Address}\t\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\t\tDelivery Hours: {customer.DeliveryHours}";
         }
 
-        public static string DisplayAllCustomers()
+        /*public static string DisplayAllCustomers()
         {
             string list = "";
             foreach (Customer customer in customers)
@@ -32,6 +32,6 @@ namespace ACME_Web_App
                 list += "\r\n";
             }
             return list;
-        }
+        }*/
     }
 }

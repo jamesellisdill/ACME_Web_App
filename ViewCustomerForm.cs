@@ -20,8 +20,20 @@ namespace ACME_Web_App
         private void button1_Click(object sender, EventArgs e)
         {
             refreshLabel.Hide();
-            Console.WriteLine(CustomerManager.DisplayAllCustomers());
-            textBox1.Text = CustomerManager.DisplayAllCustomers();
+
+            foreach (Customer customer in CustomerManager.customers)
+            {
+                ListViewItem customerDetails = new ListViewItem(customer.Name);
+                customerDetails.SubItems.Add(customer.Address);
+                customerDetails.SubItems.Add($"{(customer.IsCapableOfLoading ? "Yes" : "No")}");
+                customerDetails.SubItems.Add(customer.DeliveryHours);
+                listView1.Items.Add(customerDetails);
+            }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listView1.View = View.Details;
         }
     }
 }
