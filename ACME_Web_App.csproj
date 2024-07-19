@@ -84,8 +84,20 @@
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Inventory.cs" />
+    <Compile Include="NewOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewOrderForm.Designer.cs">
+      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Order.cs" />
     <Compile Include="OrderManager.cs" />
+    <Compile Include="OrderPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderPortal.Designer.cs">
+      <DependentUpon>OrderPortal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,6 +124,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOrderForm.resx">
+      <DependentUpon>NewOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPortal.resx">
+      <DependentUpon>OrderPortal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

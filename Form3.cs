@@ -35,5 +35,12 @@ namespace ACME_Web_App
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderPortal orderPortal = new OrderPortal();
+            orderPortal.Show();
+        }
     }
 }

@@ -1,0 +1,72 @@
+﻿namespace ACME_Web_App
+{
+    partial class OrderPortal
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.newOrderButton = new System.Windows.Forms.Button();
+            this.existingOrderButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // newOrderButton
+            // 
+            this.newOrderButton.Location = new System.Drawing.Point(323, 138);
+            this.newOrderButton.Name = "newOrderButton";
+            this.newOrderButton.Size = new System.Drawing.Size(123, 23);
+            this.newOrderButton.TabIndex = 0;
+            this.newOrderButton.Text = "New Order";
+            this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
+            // 
+            // existingOrderButton
+            // 
+            this.existingOrderButton.Location = new System.Drawing.Point(323, 212);
+            this.existingOrderButton.Name = "existingOrderButton";
+            this.existingOrderButton.Size = new System.Drawing.Size(123, 23);
+            this.existingOrderButton.TabIndex = 1;
+            this.existingOrderButton.Text = "Existing Order";
+            this.existingOrderButton.UseVisualStyleBackColor = true;
+            // 
+            // OrderPortal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.existingOrderButton);
+            this.Controls.Add(this.newOrderButton);
+            this.Name = "OrderPortal";
+            this.Text = "OrderPortal";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button newOrderButton;
+        private System.Windows.Forms.Button existingOrderButton;
+    }
+}

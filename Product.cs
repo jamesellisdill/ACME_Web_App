@@ -33,33 +33,46 @@ namespace ACME_Web_App
         }
 
         // GET STATUS TO SEE IF PRODUCT IS ACTIVE OR RESTRICTED
-        public bool GetAvailability()
+        /*public bool GetAvailability()
         {
             return availability;
-        }
+        }*/
+
+        public bool Availability { get { return availability; } }
 
         // GET ID
-        public string GetID()
+        /*public string GetID()
         {
             return id;
-        }
+        }*/
+
+        public string Id { get { return id; } }
 
         // GET DESCRIPTION
-        public string GetDescription()
+        /*public string GetDescription()
         {
             return description;
-        }
+        }*/
+
+        public string Description { get { return description; } }
 
         // GET SUPPLIER
-        public string GetSupplier()
+        /*public string GetSupplier()
         {
             return supplier;
-        }
+        }*/
+
+        public string Supplier { get { return supplier; } }
 
         // GET BRAND
-        public string GetBrand()
+        /*public string GetBrand()
         {
             return brand;
+        }*/
+
+        public string Brand
+        {
+            get { return brand; }
         }
     }
 }

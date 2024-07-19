@@ -11,7 +11,7 @@ namespace ACME_Web_App
     // INVENTORY STORES AND HANDLES EACH OF THE INDIVIDUAL PRODUCTS
     public class Inventory
     {
-        public List<Product> products;
+        public static List<Product> products;
 
         // CONSTRUCTOR
         public Inventory()
