@@ -42,14 +42,15 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OrderManager orderManager = new OrderManager();
-            Order order = orderManager.CreateNewOrder();
+            //OrderManager orderManager = new OrderManager();
+            //Order order = orderManager.CreateNewOrder();
 
-            ListView.SelectedListViewItemCollection selectedProducts = listView1.SelectedItems;
-            foreach (Product product in selectedProducts)
+            List<ListViewItem> order = new List<ListViewItem>();
+
+            foreach (ListViewItem item in listView1.SelectedItems)
             {
-                orderManager.AddToOrder(order, product);
-                Console.WriteLine(product.Description);
+                order.Add(item);
+                Console.WriteLine(item.SubItems);
             }
         }
     }

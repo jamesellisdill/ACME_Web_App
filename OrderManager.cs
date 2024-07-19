@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ACME_Web_App
 {
@@ -26,9 +27,9 @@ namespace ACME_Web_App
         }
 
         // EDITS THE ORDER PASSED IN BY ADDING IN THE PRODUCT PASSED IN. IT USES THE OBJECTS ADD METHOD TO ADD.
-        public void AddToOrder(Order order, Product product)
+        public void AddToOrder(Order order, ListViewItem item)
         {
-            order.AddToOrder(product);
+            order.AddToOrder(item);
         }
 
         // EDITS THE ORDER PASSED IN BY REMOVING IN THE PRODUCT PASSED IN. IT USES THE OBJECTS REMOVE METHOD TO REMOVE.
