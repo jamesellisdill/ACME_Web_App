@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderPortal));
             this.newOrderButton = new System.Windows.Forms.Button();
             this.existingOrderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // newOrderButton
             // 
-            this.newOrderButton.Location = new System.Drawing.Point(323, 138);
+            this.newOrderButton.Location = new System.Drawing.Point(297, 138);
             this.newOrderButton.Name = "newOrderButton";
-            this.newOrderButton.Size = new System.Drawing.Size(123, 23);
+            this.newOrderButton.Size = new System.Drawing.Size(183, 64);
             this.newOrderButton.TabIndex = 0;
             this.newOrderButton.Text = "New Order";
             this.newOrderButton.UseVisualStyleBackColor = true;
@@ -44,9 +45,9 @@
             // 
             // existingOrderButton
             // 
-            this.existingOrderButton.Location = new System.Drawing.Point(323, 212);
+            this.existingOrderButton.Location = new System.Drawing.Point(297, 221);
             this.existingOrderButton.Name = "existingOrderButton";
-            this.existingOrderButton.Size = new System.Drawing.Size(123, 23);
+            this.existingOrderButton.Size = new System.Drawing.Size(183, 66);
             this.existingOrderButton.TabIndex = 1;
             this.existingOrderButton.Text = "Existing Order";
             this.existingOrderButton.UseVisualStyleBackColor = true;
@@ -58,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.existingOrderButton);
             this.Controls.Add(this.newOrderButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OrderPortal";
             this.Text = "OrderPortal";
             this.ResumeLayout(false);

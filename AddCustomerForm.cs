@@ -33,6 +33,8 @@ namespace ACME_Web_App
             addressTextBox.Clear();
             isCapableOfLoadingCheckBox.Checked = false;
             deliveryHoursTextBox.Clear();
+            
+            label1.Visible = true;
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
@@ -45,6 +47,11 @@ namespace ACME_Web_App
             this.Hide();
             CustomerPortal customerPortal = new CustomerPortal();
             customerPortal.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
