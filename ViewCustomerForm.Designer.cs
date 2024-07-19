@@ -70,7 +70,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Name = "ViewCustomerForm";
-            this.Text = "View Customers";
+            this.Text = "View Customer";
             this.ResumeLayout(false);
             this.PerformLayout();
 

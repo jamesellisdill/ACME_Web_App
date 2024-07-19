@@ -69,7 +69,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "EditCustomerForm";
-            this.Text = "Edit Customers";
+            this.Text = "Edit Customer";
             this.ResumeLayout(false);
             this.PerformLayout();
 
