@@ -36,6 +36,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.refreshButton = new System.Windows.Forms.Button();
             this.refreshLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // editCustomerView
@@ -93,9 +94,20 @@
             this.refreshLabel.TabIndex = 2;
             this.refreshLabel.Text = "Click Refresh to update the Customer List!";
             // 
+            // button1
+            // 
+            this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow4;
+            this.button1.Location = new System.Drawing.Point(12, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 30);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // EditCustomerForm
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.refreshLabel);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.editCustomerView);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label refreshLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

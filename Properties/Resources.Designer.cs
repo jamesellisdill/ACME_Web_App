@@ -183,6 +183,26 @@ namespace ACME_Web_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reallysmallbackarrow4 {
+            get {
+                object obj = ResourceManager.GetObject("reallysmallbackarrow4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallysmallbackarrow5 {
+            get {
+                object obj = ResourceManager.GetObject("reallysmallbackarrow5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap smallbackarrow {
             get {
                 object obj = ResourceManager.GetObject("smallbackarrow", resourceCulture);

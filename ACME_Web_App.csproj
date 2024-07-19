@@ -159,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\reallysmallbackarrow5.png" />
+    <None Include="Resources\reallysmallbackarrow4.png" />
     <None Include="Resources\reallysmallbackarrow3.png" />
     <None Include="Resources\reallysmallbackarrow2.png" />
     <None Include="Resources\reallysmallbackarrow1.png" />

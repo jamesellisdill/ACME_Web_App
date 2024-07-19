@@ -51,6 +51,7 @@
             this.existingOrderButton.TabIndex = 1;
             this.existingOrderButton.Text = "Existing Order";
             this.existingOrderButton.UseVisualStyleBackColor = true;
+            this.existingOrderButton.Click += new System.EventHandler(this.existingOrderButton_Click);
             // 
             // OrderPortal
             // 

@@ -37,5 +37,12 @@ namespace ACME_Web_App
         {
             listView1.View = View.Details;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
+        }
     }
 }
