@@ -27,12 +27,5 @@ namespace ACME_Web_App
         public string Address { get { return address; } }
         public bool IsCapableOfLoading { get { return isCapableOfLoading; } }
         public string DeliveryHours { get { return deliveryHours; } }
-
-        public static List<Customer> customers = new List<Customer>();
-
-        public void AddCustomer(Customer customer)
-        {
-            customers.Add(customer);
-        }
     }
 }
