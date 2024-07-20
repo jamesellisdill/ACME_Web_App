@@ -42,9 +42,22 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
+            OrderManager orderManager = new OrderManager();
+            Order activeOrder = orderManager.CreateNewOrder();
+
+            List<string> orderItems = new List<string>();
             foreach (ListViewItem item in listView1.SelectedItems)
             {
                 Console.WriteLine(item.Text);
+                orderItems.Add(item.Text);
+            }
+
+            foreach (Product product in Inventory.products)
+            {
+                foreach (string id in orderItems)
+                {
+                    if (product.Id == id) { orderManager.AddToOrder(activeOrder, product); break; }
+                }
             }
         }
     }
