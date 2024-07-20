@@ -6,8 +6,11 @@ using System.Windows.Forms;
 
 namespace ACME_Web_App
 {
-    internal static class Program
+    public static class Program
     {
+        public static CustomersDatabase customersDatabase = new CustomersDatabase();
+        public static Inventory inventory = new Inventory();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,6 +19,11 @@ namespace ACME_Web_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // MAKE INSTANCES BEFORE RUNNING FIRST FORM
+            inventory.LoadProducts();
+            customersDatabase.LoadCustomers();
+
             Application.Run(new Form1()); //Change this to pick which form appears first.
         }
     }
