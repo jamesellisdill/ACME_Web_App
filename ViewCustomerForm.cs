@@ -17,22 +17,6 @@ namespace ACME_Web_App
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            // Hide the refresh label.
-            refreshLabel.Hide();
-
-            // Add each customer to the list view and display them.
-            foreach (Customer customer in Customer.customers)
-            {
-                ListViewItem customerDetails = new ListViewItem(customer.Name);
-                customerDetails.SubItems.Add(customer.Address);
-                customerDetails.SubItems.Add($"{(customer.IsCapableOfLoading ? "Yes" : "No")}");
-                customerDetails.SubItems.Add(customer.DeliveryHours);
-                listView1.Items.Add(customerDetails);
-            }
-        }
-
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listView1.View = View.Details;
@@ -43,6 +27,18 @@ namespace ACME_Web_App
             this.Hide();
             CustomerPortal customerPortal = new CustomerPortal();
             customerPortal.Show();
+        }
+
+        private void ViewCustomerForm_Load(object sender, EventArgs e)
+        {
+            foreach (Customer customer in Customer.customers)
+            {
+                ListViewItem customerDetails = new ListViewItem(customer.Name);
+                customerDetails.SubItems.Add(customer.Address);
+                customerDetails.SubItems.Add($"{(customer.IsCapableOfLoading ? "Yes" : "No")}");
+                customerDetails.SubItems.Add(customer.DeliveryHours);
+                listView1.Items.Add(customerDetails);
+            }
         }
     }
 }

@@ -26,7 +26,9 @@ namespace ACME_Web_App
 
         private void existingOrderButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ExistingOrderForm existingOrderForm = new ExistingOrderForm();
+            existingOrderForm.Show();
         }
     }
 }
