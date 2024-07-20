@@ -16,6 +16,7 @@ namespace ACME_Web_App
         public EditCustomerForm()
         {
             InitializeComponent();
+            LoadCustomersToListView();
         }
 
         private void editCustomerView_SelectedIndexChanged(object sender, EventArgs e)
@@ -26,11 +27,8 @@ namespace ACME_Web_App
             editCustomerView.FullRowSelect = true;
         }
 
-        private void refreshButton_Click(object sender, EventArgs e)
+        private void LoadCustomersToListView()
         {
-            // Hide the refresh label.
-            refreshLabel.Hide();
-
             // Add each customer to the list view and display them.
             foreach (Customer customer in Customer.customers)
             {
@@ -40,8 +38,27 @@ namespace ACME_Web_App
                 customerDetails.SubItems.Add(customer.DeliveryHours);
                 editCustomerView.Items.Add(customerDetails);
             }
+
+            if (Customer.customers.Count > 0)
+            {
+                refreshLabel.Hide();
+            }
+            else
+            {
+                refreshLabel.Show();
+            }
         }
 
+        // RENAME BUTTON AND METHOD TO DELETE CUSTOMER
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in editCustomerView.CheckedItems)
+            {
+                // NEED TO ADD LOGIC TO REMOVE ITEMS FROM DATABASE AND LISTVIEW. THINK WE NEED A REWRITE ON THE CUSTOMER DATABASE FIRST.
+            }
+        }
+
+        // BACK BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
