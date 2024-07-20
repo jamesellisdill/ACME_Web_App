@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +12,9 @@ namespace ACME_Web_App
 {
     public partial class NewOrderForm : Form
     {
+        Inventory inventory = new Inventory();
+        OrderManager orderManager = new OrderManager();
+
         public NewOrderForm()
         {
             InitializeComponent();
@@ -26,10 +29,9 @@ namespace ACME_Web_App
 
         private void loadProductsButton_Click(object sender, EventArgs e)
         {
-            Inventory inventory = new Inventory();
             inventory.LoadProducts();
 
-            foreach (Product product in Inventory.products)
+            foreach (Product product in inventory.GetProducts())
             {
                 ListViewItem productDetails = new ListViewItem(product.Id);
                 productDetails.SubItems.Add(product.Description);
@@ -42,9 +44,8 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OrderManager orderManager = new OrderManager();
             Order activeOrder = orderManager.CreateNewOrder();
-
+            orderManager.AddToOrdersList(activeOrder);
             List<string> orderItems = new List<string>();
             foreach (ListViewItem item in listView1.SelectedItems)
             {
@@ -52,7 +53,7 @@ namespace ACME_Web_App
                 orderItems.Add(item.Text);
             }
 
-            foreach (Product product in Inventory.products)
+            foreach (Product product in inventory.GetProducts())
             {
                 foreach (string id in orderItems)
                 {
