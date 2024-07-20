@@ -1,0 +1,86 @@
+using System;
+using System.Windows.Forms;
+
+public class LoginForm : Form
+{
+    private TextBox usernameTextBox;
+    private TextBox passwordTextBox;
+    private Button loginButton;
+    private Label messageLabel;
+    private Username usernameManager;
+
+    public LoginForm()
+    {
+        usernameManager = new Username();
+
+        usernameTextBox = new TextBox { PlaceholderText = "Username" };
+        passwordTextBox = new TextBox { PlaceholderText = "Password", PasswordChar = '*' };
+        loginButton = new Button { Text = "Log In" };
+        messageLabel = new Label();
+
+        loginButton.Click += LoginButton_Click;
+
+        InitializeLayout();
+    }
+
+    private void InitializeLayout()
+    {
+        var layout = new FlowLayoutPanel
+        {
+            Dock = DockStyle.Fill,
+            AutoSize = true,
+            Controls =
+            {
+                new Label { Text = "Username" },
+                usernameTextBox,
+                new Label { Text = "Password" },
+                passwordTextBox,
+                loginButton,
+                messageLabel
+            }
+        };
+
+        Controls.Add(layout);
+    }
+
+    private void LoginButton_Click(object sender, EventArgs e)
+    {
+        string username = usernameTextBox.Text.Trim();
+        string password = passwordTextBox.Text.Trim();
+
+        try
+        {
+            if (usernameManager.IsAllowedToLogin(username, password))
+            {
+                messageLabel.Text = "Login successful!";
+                // Next Screen
+            }
+        }
+        catch (Exception ex)
+        {
+            messageLabel.Text = ex.Message;
+        }
+    }
+}
+
+public class Username
+{
+    private readonly Dictionary<string, string> users = new Dictionary<string, string>
+    {
+        { "salesman1", "password123" },
+        { "admin1", "adminPass456" }
+    };
+
+    public bool IsAllowedToLogin(string username, string password)
+    {
+        if (users.TryGetValue(username, out var storedPassword))
+        {
+            if (storedPassword == password)
+            {
+                return true;
+            }
+            throw new Exception("Incorrect password.");
+        }
+        throw new Exception("Username not found.");
+    }
+}
