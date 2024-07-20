@@ -51,6 +51,11 @@ namespace ACME_Web_App
             }
         }
 
+        public List<Product> GetProducts()
+        {
+            return products;
+        }
+
         // LOAD PRODUCT LIST INTO THE INVENTORY
         public void LoadProducts()
         {
