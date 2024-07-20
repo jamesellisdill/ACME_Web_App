@@ -42,7 +42,10 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            foreach (ListViewItem item in listView1.SelectedItems)
+            {
+                Console.WriteLine(item.Text);
+            }
         }
     }
 }
