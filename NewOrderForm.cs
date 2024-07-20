@@ -18,6 +18,7 @@ namespace ACME_Web_App
         public NewOrderForm()
         {
             InitializeComponent();
+            LoadProductsToListView();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -27,7 +28,8 @@ namespace ACME_Web_App
             listView1.FullRowSelect = true;
         }
 
-        private void loadProductsButton_Click(object sender, EventArgs e)
+
+        private void LoadProductsToListView()
         {
             inventory.LoadProducts();
 
@@ -38,28 +40,43 @@ namespace ACME_Web_App
                 productDetails.SubItems.Add(product.Supplier);
                 productDetails.SubItems.Add(product.Brand);
                 productDetails.SubItems.Add($"{(product.Availability ? "Active" : "Restricted")}");
+                productDetails.Tag = product;
                 listView1.Items.Add(productDetails);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Order activeOrder = orderManager.CreateNewOrder();
-            orderManager.AddToOrdersList(activeOrder);
-            List<string> orderItems = new List<string>();
-            foreach (ListViewItem item in listView1.SelectedItems)
+            Order order = orderManager.CreateNewOrder();
+            orderManager.AddToOrdersList(order);
+
+            foreach (ListViewItem item in listView1.CheckedItems)
             {
-                Console.WriteLine(item.Text);
-                orderItems.Add(item.Text);
+                Product product = item.Tag as Product;
+                order.AddToOrder(product);
+
+                //TESTING
+                Console.WriteLine($"Added to order: {product.ViewProductInfo()}");
             }
 
-            foreach (Product product in inventory.GetProducts())
-            {
-                foreach (string id in orderItems)
-                {
-                    if (product.Id == id) { orderManager.AddToOrder(activeOrder, product); break; }
-                }
-            }
+
+            //List<string> orderItems = new List<string>();
+            //foreach (ListViewItem item in listView1.SelectedItems)
+            //{
+            //    Console.WriteLine(item.Text);
+            //    orderItems.Add(item.Text);
+            //}
+
+            //foreach (Product product in inventory.GetProducts())
+            //{
+            //    foreach (string id in orderItems)
+            //    {
+            //        if (product.Id == id) { orderManager.AddToOrder(activeOrder, product); break; }
+            //    }
+            //}
+
+            //Console.WriteLine(orderItems+"next var"+activeOrder.GetOrderProducts().ToString());
+
         }
     }
 }
