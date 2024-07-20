@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,7 +31,7 @@ namespace ACME_Web_App
 
         private void ViewCustomerForm_Load(object sender, EventArgs e)
         {
-            foreach (Customer customer in Customer.customers)
+            foreach (Customer customer in Program.customersDatabase.GetCustomers())
             {
                 ListViewItem customerDetails = new ListViewItem(customer.Name);
                 customerDetails.SubItems.Add(customer.Address);
