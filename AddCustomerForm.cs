@@ -27,8 +27,9 @@ namespace ACME_Web_App
 
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
-            customer.AddCustomer(customer);
+            Program.customersDatabase.AddCustomer(customer);
 
+            // CLEAR TEXTBOXES AFTER ADDING CUSTOMER
             nameTextBox.Clear();
             addressTextBox.Clear();
             isCapableOfLoadingCheckBox.Checked = false;
