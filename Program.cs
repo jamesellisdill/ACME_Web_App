@@ -10,6 +10,7 @@ namespace ACME_Web_App
     {
         public static CustomersDatabase customersDatabase = new CustomersDatabase();
         public static Inventory inventory = new Inventory();
+        public static OrderManager orderManager = new OrderManager();
 
         /// <summary>
         /// The main entry point for the application.
