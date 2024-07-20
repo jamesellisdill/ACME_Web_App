@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +12,14 @@ namespace ACME_Web_App
 {
     public partial class Form2 : Form
     {
+        private string authenticatorCode = "123456";
+
         public Form2()
         {
             InitializeComponent();
-
         }
 
+        // BACK ARROW
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -26,15 +28,21 @@ namespace ACME_Web_App
 
         }
 
+        // AUTHENTICATE BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            PortalScreen form3 = new PortalScreen();
-            form3.Show();
+            string enteredCode = textBox1.Text;
+
+            if (String.Equals(authenticatorCode, enteredCode))
+            {
+                this.Hide();
+                PortalScreen form3 = new PortalScreen();
+                form3.Show();
+            }
+            else
+            {
+                // SHOW THE ERROR MESSAGE
+            }
         }
     }
-
 }
-
-    
-
