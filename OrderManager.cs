@@ -43,5 +43,10 @@ namespace ACME_Web_App
         {
             return order.GetOrderID();
         }
+
+        public void AddToOrdersList(Order order)
+        {
+            orders.Add(order);
+        }
     }
 }
