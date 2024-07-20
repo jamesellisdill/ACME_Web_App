@@ -12,9 +12,6 @@ namespace ACME_Web_App
 {
     public partial class NewOrderForm : Form
     {
-        Inventory inventory = new Inventory();
-        OrderManager orderManager = new OrderManager();
-
         public NewOrderForm()
         {
             InitializeComponent();
@@ -31,24 +28,22 @@ namespace ACME_Web_App
 
         private void LoadProductsToListView()
         {
-            inventory.LoadProducts();
-
-            foreach (Product product in inventory.GetProducts())
-            {
-                ListViewItem productDetails = new ListViewItem(product.Id);
-                productDetails.SubItems.Add(product.Description);
-                productDetails.SubItems.Add(product.Supplier);
-                productDetails.SubItems.Add(product.Brand);
-                productDetails.SubItems.Add($"{(product.Availability ? "Active" : "Restricted")}");
-                productDetails.Tag = product;
-                listView1.Items.Add(productDetails);
-            }
+           foreach (Product product in Program.inventory.GetProducts())
+        {
+            ListViewItem productDetails = new ListViewItem(product.Id);
+            productDetails.SubItems.Add(product.Description);
+            productDetails.SubItems.Add(product.Supplier);
+            productDetails.SubItems.Add(product.Brand);
+            productDetails.SubItems.Add($"{(product.Availability ? "Active" : "Restricted")}");
+            productDetails.Tag = product;
+            listView1.Items.Add(productDetails);
+        }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Order order = orderManager.CreateNewOrder();
-            orderManager.AddToOrdersList(order);
+            Order order = Program.orderManager.CreateNewOrder();
+            Program.orderManager.AddToOrdersList(order);
 
             foreach (ListViewItem item in listView1.CheckedItems)
             {
