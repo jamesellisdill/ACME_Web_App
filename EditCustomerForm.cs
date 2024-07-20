@@ -30,16 +30,17 @@ namespace ACME_Web_App
         private void LoadCustomersToListView()
         {
             // Add each customer to the list view and display them.
-            foreach (Customer customer in Customer.customers)
+            foreach (Customer customer in Program.customersDatabase.GetCustomers())
             {
                 ListViewItem customerDetails = new ListViewItem(customer.Name);
                 customerDetails.SubItems.Add(customer.Address);
                 customerDetails.SubItems.Add($"{(customer.IsCapableOfLoading ? "Yes" : "No")}");
                 customerDetails.SubItems.Add(customer.DeliveryHours);
+                customerDetails.Tag = customer;
                 editCustomerView.Items.Add(customerDetails);
             }
 
-            if (Customer.customers.Count > 0)
+            if (Program.customersDatabase.GetCustomers().Count > 0)
             {
                 refreshLabel.Hide();
             }
@@ -49,6 +50,33 @@ namespace ACME_Web_App
             }
         }
 
+        // I HAD UI ISSUES ON MY END. THE BACK BUTTON LOGIC IS HERE
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
+        }
+
+        // I HAD UI ISSUES ON MY END. THE REFRESH BUTTON SHOULD BE REPURPOSED TO BE CALLED DELETE CUSTOMER. PUT THIS LOGIC IN THE BUTTON CLICK METHOD FOR THAT BUTTON.
+        private void refreshButton_Click_1(object sender, EventArgs e)
+        {
+            Console.WriteLine("Button CLICKED");
+            Console.WriteLine(Program.customersDatabase.GetCustomers());
+            foreach (ListViewItem item in editCustomerView.CheckedItems)
+            {
+                Customer customer = (Customer)item.Tag;
+                if (customer != null)
+                {
+                    Program.customersDatabase.RemoveCustomer(customer);
+                    editCustomerView.Items.Remove(item);
+                }
+            }
+            Console.WriteLine("2nd check:" + Program.customersDatabase.GetCustomers());
+        }
+
+// ditch the logic below here. i kept it because i think you will have an error if i don't leave the existing button click events in place. replace with the logic above for buttons.
+/* ------------------------------------------------------------------------------------------*/
         // RENAME BUTTON AND METHOD TO DELETE CUSTOMER
         private void refreshButton_Click(object sender, EventArgs e)
         {
