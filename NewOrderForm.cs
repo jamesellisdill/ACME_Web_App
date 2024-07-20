@@ -28,16 +28,16 @@ namespace ACME_Web_App
 
         private void LoadProductsToListView()
         {
-           foreach (Product product in Program.inventory.GetProducts())
-        {
-            ListViewItem productDetails = new ListViewItem(product.Id);
-            productDetails.SubItems.Add(product.Description);
-            productDetails.SubItems.Add(product.Supplier);
-            productDetails.SubItems.Add(product.Brand);
-            productDetails.SubItems.Add($"{(product.Availability ? "Active" : "Restricted")}");
-            productDetails.Tag = product;
-            listView1.Items.Add(productDetails);
-        }
+            foreach (Product product in Program.inventory.GetProducts())
+            {
+                ListViewItem productDetails = new ListViewItem(product.Id);
+                productDetails.SubItems.Add(product.Description);
+                productDetails.SubItems.Add(product.Supplier);
+                productDetails.SubItems.Add(product.Brand);
+                productDetails.SubItems.Add($"{(product.Availability ? "Active" : "Restricted")}");
+                productDetails.Tag = product;
+                listView1.Items.Add(productDetails);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,6 +72,11 @@ namespace ACME_Web_App
 
             //Console.WriteLine(orderItems+"next var"+activeOrder.GetOrderProducts().ToString());
 
+        }
+
+        private void loadProductsButton_Click(object sender, EventArgs e)
+        {
+            // DELETE ME WHEN THE BUTTON IS DELETED
         }
     }
 }
