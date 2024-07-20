@@ -1,4 +1,4 @@
-﻿using ACME_Web_App;
+using ACME_Web_App;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,15 +27,23 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var form2 = new Form2();
-            form2.Show();
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
+            foreach (User user in Program.users) 
+            {
+                if (user.LoginCredentialsCheck(username, password) && user.accountActive)
+                {
+                    this.Hide();
+                    var form2 = new Form2();
+                    form2.Show();
+                    return;
+                }
+            }
+
+            // UNABLE TO LOGIN. 
+            // QUEUE THE LOADING OF ERROR UI SCENE.
+            Console.WriteLine("UNABLE TO LOGIN ERROR");
         }
-
-
-
-
-
-
     }
 }
