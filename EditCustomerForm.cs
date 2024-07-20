@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,7 +51,7 @@ namespace ACME_Web_App
         }
 
         // I HAD UI ISSUES ON MY END. THE BACK BUTTON LOGIC IS HERE
-        private void refreshButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             CustomerPortal customerPortal = new CustomerPortal();
@@ -59,7 +59,7 @@ namespace ACME_Web_App
         }
 
         // I HAD UI ISSUES ON MY END. THE REFRESH BUTTON SHOULD BE REPURPOSED TO BE CALLED DELETE CUSTOMER. PUT THIS LOGIC IN THE BUTTON CLICK METHOD FOR THAT BUTTON.
-        private void refreshButton_Click_1(object sender, EventArgs e)
+        private void refreshButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Button CLICKED");
             Console.WriteLine(Program.customersDatabase.GetCustomers());
@@ -73,25 +73,6 @@ namespace ACME_Web_App
                 }
             }
             Console.WriteLine("2nd check:" + Program.customersDatabase.GetCustomers());
-        }
-
-// ditch the logic below here. i kept it because i think you will have an error if i don't leave the existing button click events in place. replace with the logic above for buttons.
-/* ------------------------------------------------------------------------------------------*/
-        // RENAME BUTTON AND METHOD TO DELETE CUSTOMER
-        private void refreshButton_Click(object sender, EventArgs e)
-        {
-            foreach (ListViewItem item in editCustomerView.CheckedItems)
-            {
-                // NEED TO ADD LOGIC TO REMOVE ITEMS FROM DATABASE AND LISTVIEW. THINK WE NEED A REWRITE ON THE CUSTOMER DATABASE FIRST.
-            }
-        }
-
-        // BACK BUTTON
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            CustomerPortal customerPortal = new CustomerPortal();
-            customerPortal.Show();
         }
     }
 }
