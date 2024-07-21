@@ -39,7 +39,7 @@ namespace ACME_Web_App
             order.RemoveFromOrder(product);
         }
 
-        // CURRENTLY IT JUST RETURNS THE ORDER ID TO USE AS A CONFIRMATION NUMBER. THIS MAY BE EXPANDED ON LATER AS WE IMPLEMENT THE SOLUTION.
+        // EXPORTS JSON AFTER CREATING ORDER
         public string PlaceOrder(Order order)
         {
             string userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
