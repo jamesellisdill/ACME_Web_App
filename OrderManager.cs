@@ -42,11 +42,17 @@ namespace ACME_Web_App
         // CURRENTLY IT JUST RETURNS THE ORDER ID TO USE AS A CONFIRMATION NUMBER. THIS MAY BE EXPANDED ON LATER AS WE IMPLEMENT THE SOLUTION.
         public string PlaceOrder(Order order)
         {
-            //Console.WriteLine(order.GetOrderID());
-            StreamWriter streamWriter = new StreamWriter($"D:\\{order.GetOrderID()}.json");
-            streamWriter.WriteLine("Order ID: " + order.GetOrderID());
-            streamWriter.WriteLine(order.DisplayOrderProducts());
-            streamWriter.Close();
+            string userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string filePath = Path.Combine(userProfile, "Downloads", $"{order.GetOrderID()}.json");
+
+            using (StreamWriter streamWriter = new StreamWriter(filePath))
+            {
+                streamWriter.WriteLine("Order ID: " + order.GetOrderID());
+                streamWriter.WriteLine(order.DisplayOrderProducts());
+                streamWriter.Close();
+
+            }
+
             return order.GetOrderID();
         }
 
@@ -56,3 +62,5 @@ namespace ACME_Web_App
         }
     }
 }
+
+
