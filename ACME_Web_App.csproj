@@ -164,6 +164,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\logoBlur3.png" />
+    <None Include="Resources\logoBlur2.png" />
     <None Include="Resources\reallySmallHomeButton5.png" />
     <None Include="Resources\reallySmallHomeButton4.png" />
     <None Include="Resources\reallysmallbackarrow8.png" />
