@@ -166,6 +166,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\reallySmallHomeButton3.png" />
+    <None Include="Resources\reallySmallHomeButton2.png" />
+    <None Include="Resources\reallySmallHomeButton1.png" />
+    <None Include="Resources\reallySmallHomeButton.png" />
+    <None Include="Resources\small home button.png" />
     <None Include="Resources\reallysmallbackarrow7.png" />
     <None Include="Resources\reallysmallbackarrow6.png" />
     <None Include="Resources\reallysmallbackarrow5.png" />
