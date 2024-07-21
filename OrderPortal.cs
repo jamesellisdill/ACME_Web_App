@@ -23,12 +23,5 @@ namespace ACME_Web_App
             NewOrderForm newOrderForm = new NewOrderForm();
             newOrderForm.Show();
         }
-
-        private void existingOrderButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ExistingOrderForm existingOrderForm = new ExistingOrderForm();
-            existingOrderForm.Show();
-        }
     }
 }

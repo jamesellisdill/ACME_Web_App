@@ -41,11 +41,13 @@
             // 
             // editCustomerView
             // 
+            this.editCustomerView.CheckBoxes = true;
             this.editCustomerView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
+            this.editCustomerView.GridLines = true;
             this.editCustomerView.HideSelection = false;
             this.editCustomerView.Location = new System.Drawing.Point(12, 47);
             this.editCustomerView.Name = "editCustomerView";
@@ -98,7 +100,7 @@
             // refreshLabel
             // 
             this.refreshLabel.AutoSize = true;
-            this.refreshLabel.Location = new System.Drawing.Point(362, 240);
+            this.refreshLabel.Location = new System.Drawing.Point(374, 242);
             this.refreshLabel.Name = "refreshLabel";
             this.refreshLabel.Size = new System.Drawing.Size(105, 13);
             this.refreshLabel.TabIndex = 2;
