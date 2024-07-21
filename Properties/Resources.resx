@@ -133,6 +133,9 @@
   <data name="logo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reallysmallbackarrow5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reallysmallbackarrow5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reallysmallbackarrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallysmallbackarrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,10 +160,13 @@
   <data name="blurlogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\blurlogo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reallysmallbackarrow6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reallysmallbackarrow6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reallysmallbackarrow4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallysmallbackarrow4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reallysmallbackarrow5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reallysmallbackarrow5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reallysmallbackarrow7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reallysmallbackarrow7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

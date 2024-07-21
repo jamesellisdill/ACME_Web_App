@@ -23,5 +23,12 @@ namespace ACME_Web_App
             NewOrderForm newOrderForm = new NewOrderForm();
             newOrderForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PortalScreen portalScreen = new PortalScreen();
+            portalScreen.Show();
+        }
     }
 }
