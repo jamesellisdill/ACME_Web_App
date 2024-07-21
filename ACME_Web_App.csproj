@@ -61,10 +61,6 @@
       <DependentUpon>CustomerPortal.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomersDatabase.cs" />
-    <Compile Include="EditCustomerForm.cs" />
-    <Compile Include="EditCustomerForm.Designer.cs">
-      <DependentUpon>EditCustomerForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +110,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerPortal.resx">
       <DependentUpon>CustomerPortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditCustomerForm.resx">
-      <DependentUpon>EditCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
