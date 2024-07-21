@@ -145,7 +145,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
             this.Name = "NewOrderForm";
-            this.Text = "NewOrderForm";
+            this.Text = "New Order";
             this.ResumeLayout(false);
             this.PerformLayout();
 

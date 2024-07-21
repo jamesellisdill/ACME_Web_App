@@ -105,7 +105,7 @@
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ViewModifyCustomerForm";
-            this.Text = "ViewModifyCustomerForm";
+            this.Text = "View / Modify Customers";
             this.Load += new System.EventHandler(this.ViewModifyCustomerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();

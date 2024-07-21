@@ -84,7 +84,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.newOrderButton);
             this.Name = "OrderPortal";
-            this.Text = "OrderPortal";
+            this.Text = "Order Portal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

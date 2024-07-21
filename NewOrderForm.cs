@@ -79,6 +79,10 @@ namespace ACME_Web_App
                 label2.Show();
             }
 
+            foreach (ListViewItem item in listView1.CheckedItems)
+            {
+                if (item.Checked == true) item.Checked = false;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
