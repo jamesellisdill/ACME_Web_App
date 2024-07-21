@@ -28,6 +28,9 @@ namespace ACME_Web_App
 
         private void LoadProductsToListView()
         {
+            label1.Hide();
+            label2.Hide();
+
             foreach (Product product in Program.inventory.GetProducts())
             {
                 ListViewItem productDetails = new ListViewItem(product.Id);
@@ -54,23 +57,14 @@ namespace ACME_Web_App
                 Console.WriteLine($"Added to order: {product.ViewProductInfo()}");
             }
 
+            string orderID = order.GetOrderID();
 
-            //List<string> orderItems = new List<string>();
-            //foreach (ListViewItem item in listView1.SelectedItems)
-            //{
-            //    Console.WriteLine(item.Text);
-            //    orderItems.Add(item.Text);
-            //}
+            label2.Text = orderID;
+            label2.Show();
+        }
 
-            //foreach (Product product in inventory.GetProducts())
-            //{
-            //    foreach (string id in orderItems)
-            //    {
-            //        if (product.Id == id) { orderManager.AddToOrder(activeOrder, product); break; }
-            //    }
-            //}
-
-            //Console.WriteLine(orderItems+"next var"+activeOrder.GetOrderProducts().ToString());
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
