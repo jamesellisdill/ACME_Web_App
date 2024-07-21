@@ -45,5 +45,12 @@ namespace ACME_Web_App
             OrderPortal orderPortal = new OrderPortal();
             orderPortal.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+               form1.Show();
+        }
     }
 }
