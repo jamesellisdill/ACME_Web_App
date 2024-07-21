@@ -58,8 +58,9 @@ namespace ACME_Web_App
             }
 
             string orderID = order.GetOrderID();
-
             label2.Text = orderID;
+
+            label1.Show();
             label2.Show();
         }
 

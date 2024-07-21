@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderPortal));
             this.newOrderButton = new System.Windows.Forms.Button();
-            this.existingOrderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // newOrderButton
             // 
-            this.newOrderButton.Location = new System.Drawing.Point(297, 138);
+            this.newOrderButton.Location = new System.Drawing.Point(307, 181);
             this.newOrderButton.Name = "newOrderButton";
             this.newOrderButton.Size = new System.Drawing.Size(183, 64);
             this.newOrderButton.TabIndex = 0;
@@ -43,22 +42,11 @@
             this.newOrderButton.UseVisualStyleBackColor = true;
             this.newOrderButton.Click += new System.EventHandler(this.newOrderButton_Click);
             // 
-            // existingOrderButton
-            // 
-            this.existingOrderButton.Location = new System.Drawing.Point(297, 221);
-            this.existingOrderButton.Name = "existingOrderButton";
-            this.existingOrderButton.Size = new System.Drawing.Size(183, 66);
-            this.existingOrderButton.TabIndex = 1;
-            this.existingOrderButton.Text = "Existing Order";
-            this.existingOrderButton.UseVisualStyleBackColor = true;
-            this.existingOrderButton.Click += new System.EventHandler(this.existingOrderButton_Click);
-            // 
             // OrderPortal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.existingOrderButton);
             this.Controls.Add(this.newOrderButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OrderPortal";
@@ -70,6 +58,5 @@
         #endregion
 
         private System.Windows.Forms.Button newOrderButton;
-        private System.Windows.Forms.Button existingOrderButton;
     }
 }
