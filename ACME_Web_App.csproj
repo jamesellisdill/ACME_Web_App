@@ -148,6 +148,9 @@
     <EmbeddedResource Include="ViewModifyCustomerForm.resx">
       <DependentUpon>ViewModifyCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Customer.datasource" />
+    <None Include="Properties\DataSources\CustomersDatabase.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
