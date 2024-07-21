@@ -42,10 +42,10 @@ namespace ACME_Web_App
         // EXPORTS JSON AFTER CREATING ORDER
         public string PlaceOrder(Order order)
         {
-            string userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string filePath = Path.Combine(userProfile, "Downloads", $"{order.GetOrderID()}.json");
+            //string userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            //string filePath = Path.Combine(userProfile, "Downloads", $"{order.GetOrderID()}.json");
 
-            using (StreamWriter streamWriter = new StreamWriter(filePath))
+            using (StreamWriter streamWriter = new StreamWriter($"{order.GetOrderID()}.json"))
             {
                 streamWriter.WriteLine("Order ID: " + order.GetOrderID());
                 streamWriter.WriteLine(order.DisplayOrderProducts());
