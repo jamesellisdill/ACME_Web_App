@@ -24,6 +24,14 @@ namespace ACME_Web_App
             form2.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OrderPortal orderportal = new OrderPortal();
+            orderportal.Show();
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
