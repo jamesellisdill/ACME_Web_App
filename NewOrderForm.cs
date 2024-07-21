@@ -73,10 +73,5 @@ namespace ACME_Web_App
             //Console.WriteLine(orderItems+"next var"+activeOrder.GetOrderProducts().ToString());
 
         }
-
-        private void loadProductsButton_Click(object sender, EventArgs e)
-        {
-            // DELETE ME WHEN THE BUTTON IS DELETED
-        }
     }
 }

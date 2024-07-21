@@ -77,11 +77,11 @@
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(693, 12);
+            this.refreshButton.Location = new System.Drawing.Point(655, 12);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(95, 29);
+            this.refreshButton.Size = new System.Drawing.Size(133, 29);
             this.refreshButton.TabIndex = 1;
-            this.refreshButton.Text = "Refresh";
+            this.refreshButton.Text = "Delete Selected Users";
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 

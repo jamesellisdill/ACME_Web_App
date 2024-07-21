@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.loadProductsButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -37,16 +36,6 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // loadProductsButton
-            // 
-            this.loadProductsButton.Location = new System.Drawing.Point(689, 12);
-            this.loadProductsButton.Name = "loadProductsButton";
-            this.loadProductsButton.Size = new System.Drawing.Size(99, 23);
-            this.loadProductsButton.TabIndex = 0;
-            this.loadProductsButton.Text = "Load Products";
-            this.loadProductsButton.UseVisualStyleBackColor = true;
-            this.loadProductsButton.Click += new System.EventHandler(this.loadProductsButton_Click);
             // 
             // listView1
             // 
@@ -91,7 +80,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(584, 12);
+            this.button1.Location = new System.Drawing.Point(689, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 23);
             this.button1.TabIndex = 2;
@@ -106,7 +95,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.loadProductsButton);
             this.Name = "NewOrderForm";
             this.Text = "NewOrderForm";
             this.ResumeLayout(false);
@@ -114,8 +102,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button loadProductsButton;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
