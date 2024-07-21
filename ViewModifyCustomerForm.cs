@@ -27,9 +27,16 @@ namespace ACME_Web_App
             dataGridView1.DataSource = CustomersDatabase.customers;
         }
 
+        // DELETE CUSTOMER(S)
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0) { dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index); }
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                CustomersDatabase.customers.RemoveAt(row.Index);
+            }
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
