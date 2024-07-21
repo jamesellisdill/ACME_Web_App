@@ -31,5 +31,19 @@ namespace ACME_Web_App
         {
             if (dataGridView1.SelectedRows.Count > 0) { dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index); }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerPortal customerPortal = new CustomerPortal();
+            customerPortal.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PortalScreen portalScreen = new PortalScreen();
+            portalScreen.Show();
+        }
     }
 }

@@ -223,6 +223,16 @@ namespace ACME_Web_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reallysmallbackarrow8 {
+            get {
+                object obj = ResourceManager.GetObject("reallysmallbackarrow8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reallySmallHomeButton {
             get {
                 object obj = ResourceManager.GetObject("reallySmallHomeButton", resourceCulture);
@@ -256,6 +266,26 @@ namespace ACME_Web_App.Properties {
         internal static System.Drawing.Bitmap reallySmallHomeButton3 {
             get {
                 object obj = ResourceManager.GetObject("reallySmallHomeButton3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton4 {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton5 {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

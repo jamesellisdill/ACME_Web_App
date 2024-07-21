@@ -37,8 +37,8 @@ namespace ACME_Web_App
         {
             // Goes to the view/modify customer screen.
             this.Hide();
-            EditCustomerForm editCustomerForm = new EditCustomerForm();
-            editCustomerForm.Show();
+            ViewModifyCustomerForm ViewCustomerForm = new ViewModifyCustomerForm();
+            ViewCustomerForm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
