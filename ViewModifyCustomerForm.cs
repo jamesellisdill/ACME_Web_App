@@ -39,6 +39,7 @@ namespace ACME_Web_App
             customerPortal.Show();
         }
 
+        // BACK BUTTON
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -46,6 +47,7 @@ namespace ACME_Web_App
             customerPortal.Show();
         }
 
+        // HOME BUTTON
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
