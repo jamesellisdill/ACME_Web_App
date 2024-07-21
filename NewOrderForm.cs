@@ -57,6 +57,8 @@ namespace ACME_Web_App
                 Console.WriteLine($"Added to order: {product.ViewProductInfo()}");
             }
 
+            Program.orderManager.PlaceOrder(order);
+
             string orderID = order.GetOrderID();
             label2.Text = orderID;
 

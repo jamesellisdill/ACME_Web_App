@@ -41,6 +41,7 @@ namespace ACME_Web_App
         // CURRENTLY IT JUST RETURNS THE ORDER ID TO USE AS A CONFIRMATION NUMBER. THIS MAY BE EXPANDED ON LATER AS WE IMPLEMENT THE SOLUTION.
         public string PlaceOrder(Order order)
         {
+            Console.WriteLine(order.GetOrderID());
             return order.GetOrderID();
         }
 
