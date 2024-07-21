@@ -223,6 +223,56 @@ namespace ACME_Web_App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton1 {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton2 {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reallySmallHomeButton3 {
+            get {
+                object obj = ResourceManager.GetObject("reallySmallHomeButton3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap small_home_button {
+            get {
+                object obj = ResourceManager.GetObject("small home button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap smallbackarrow {
             get {
                 object obj = ResourceManager.GetObject("smallbackarrow", resourceCulture);

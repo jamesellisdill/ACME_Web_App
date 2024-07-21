@@ -66,5 +66,12 @@ namespace ACME_Web_App
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PortalScreen portalScreen = new PortalScreen();
+            portalScreen.Show();
+        }
     }
 }

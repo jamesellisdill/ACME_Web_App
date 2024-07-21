@@ -93,5 +93,12 @@ namespace ACME_Web_App
            OrderPortal Orderportal = new OrderPortal();
             Orderportal.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PortalScreen portalScreen = new PortalScreen();
+            portalScreen.Show();
+        }
     }
 }
