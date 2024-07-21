@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public class Order
     {
@@ -34,7 +34,7 @@ namespace ACME_Web_App
         }
 
         // SHOW A STRING OF ALL PRODUCTS IN THE ORDER CONCATENATED
-/*        public string DisplayOrderProducts()
+        public string DisplayOrderProducts()
         {
             string orderProductList = "";
             foreach (Product product in order)
@@ -42,13 +42,7 @@ namespace ACME_Web_App
                 orderProductList += product.ViewProductInfo() + "\n";
             }
             return orderProductList;
-        }*/
-
-        // RETURNS THE ACTUAL PRODUCT OBJECTS IN THE ORDER
-/*        public List<Product> GetOrderProducts()
-        {
-            return order;
-        }*/
+        }
 
         // GETS ORDER ID
         public string GetOrderID()

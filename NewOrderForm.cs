@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class NewOrderForm : Form
     {
@@ -18,6 +18,7 @@ namespace ACME_Web_App
             LoadProductsToListView();
         }
 
+        // LIST VIEW FORMATTING
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
             listView1.View = View.Details;
@@ -28,9 +29,11 @@ namespace ACME_Web_App
 
         private void LoadProductsToListView()
         {
+            // Hides the confirmation labels.
             label1.Hide();
             label2.Hide();
 
+            //Loads the products.
             foreach (Product product in Program.inventory.GetProducts())
             {
                 ListViewItem productDetails = new ListViewItem(product.Id);
@@ -43,6 +46,7 @@ namespace ACME_Web_App
             }
         }
 
+        // CREATE ORDER
         private void button1_Click(object sender, EventArgs e)
         {
             Order order = Program.orderManager.CreateNewOrder();
@@ -62,6 +66,7 @@ namespace ACME_Web_App
             string orderID = order.GetOrderID();
             label2.Text = orderID;
 
+            // Shows the confirmation labels.
             label1.Show();
             label2.Show();
         }
@@ -71,6 +76,7 @@ namespace ACME_Web_App
 
         }
 
+        // ORDER PORTAL
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();

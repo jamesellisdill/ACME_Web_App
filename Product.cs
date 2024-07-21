@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     // PRODUCT IS THE OBJECT FOR A GIVEN ENTRY IN THE INVENTORY DATABASE
     public class Product
@@ -32,44 +32,11 @@ namespace ACME_Web_App
             return $"{id}, {description}, {supplier}, {brand}, {(availability ? "Active" : "Restricted")}";
         }
 
-        // GET STATUS TO SEE IF PRODUCT IS ACTIVE OR RESTRICTED
-        /*public bool GetAvailability()
-        {
-            return availability;
-        }*/
-
+        //GETTERS
         public bool Availability { get { return availability; } }
-
-        // GET ID
-        /*public string GetID()
-        {
-            return id;
-        }*/
-
         public string Id { get { return id; } }
-
-        // GET DESCRIPTION
-        /*public string GetDescription()
-        {
-            return description;
-        }*/
-
         public string Description { get { return description; } }
-
-        // GET SUPPLIER
-        /*public string GetSupplier()
-        {
-            return supplier;
-        }*/
-
         public string Supplier { get { return supplier; } }
-
-        // GET BRAND
-        /*public string GetBrand()
-        {
-            return brand;
-        }*/
-
         public string Brand
         {
             get { return brand; }

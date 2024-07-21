@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public class OrderManager
     {
@@ -42,6 +43,10 @@ namespace ACME_Web_App
         public string PlaceOrder(Order order)
         {
             Console.WriteLine(order.GetOrderID());
+            StreamWriter streamWriter = new StreamWriter($"D:\\{order.GetOrderID()}.json");
+            streamWriter.WriteLine("Order ID: " + order.GetOrderID());
+            streamWriter.WriteLine(order.DisplayOrderProducts());
+            streamWriter.Close();
             return order.GetOrderID();
         }
 

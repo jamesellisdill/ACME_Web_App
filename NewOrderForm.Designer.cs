@@ -1,4 +1,4 @@
-﻿namespace ACME_Web_App
+﻿namespace ACME_App
 {
     partial class NewOrderForm
     {
@@ -114,7 +114,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow7;
+            this.button2.Image = global::ACME_App.Properties.Resources.reallysmallbackarrow7;
             this.button2.Location = new System.Drawing.Point(12, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 30);

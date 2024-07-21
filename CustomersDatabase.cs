@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public class CustomersDatabase
     {
@@ -44,21 +44,5 @@ namespace ACME_Web_App
             customers.Add(new Customer("Yeast Feast Brewery", "303 Yeast Way, Hoptown", true, "13"));
             #endregion
         }
-
-        //public static string DisplayCustomerInfo(Customer customer)
-        //{
-        //    return $"Name: {customer.Name}\tAddress: {customer.Address}\tIs capable of loading? {(customer.IsCapableOfLoading ? "Yes" : "No")}\tDelivery Hours: {customer.DeliveryHours}";
-        //}
-
-        //public static string DisplayAllCustomers()
-        //{
-        //    string list = "";
-        //    foreach (Customer customer in customers)
-        //    {
-        //        list += DisplayCustomerInfo(customer);
-        //        list += "\n";
-        //    }
-        //    return list;
-        //}
     }
 }

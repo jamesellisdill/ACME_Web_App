@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class PortalScreen : Form
     {
@@ -17,6 +17,7 @@ namespace ACME_Web_App
             InitializeComponent();
         }
 
+        // BACK ARROW
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -24,6 +25,7 @@ namespace ACME_Web_App
             form2.Show();
         }
 
+        // CUSTOMER PORTAL
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -36,6 +38,7 @@ namespace ACME_Web_App
 
         }
 
+        // ORDER PORTAL
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

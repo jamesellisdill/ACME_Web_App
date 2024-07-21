@@ -1,4 +1,4 @@
-﻿namespace ACME_Web_App
+﻿namespace ACME_App
 {
     partial class Form1
     {
@@ -86,7 +86,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.logo1;
+            this.pictureBox1.Image = global::ACME_App.Properties.Resources.logo1;
             this.pictureBox1.Location = new System.Drawing.Point(249, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 146);

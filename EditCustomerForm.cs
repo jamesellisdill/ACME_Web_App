@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class EditCustomerForm : Form
     {
@@ -21,6 +21,7 @@ namespace ACME_Web_App
 
         private void editCustomerView_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Formats the list view.
             editCustomerView.View = View.Details;
             editCustomerView.LabelEdit = true;
             editCustomerView.CheckBoxes = true;
@@ -40,6 +41,7 @@ namespace ACME_Web_App
                 editCustomerView.Items.Add(customerDetails);
             }
 
+            // If there are no customers, display a label stating "No customers found."
             if (Program.customersDatabase.GetCustomers().Count > 0)
             {
                 refreshLabel.Hide();
@@ -50,15 +52,15 @@ namespace ACME_Web_App
             }
         }
 
-        // I HAD UI ISSUES ON MY END. THE BACK BUTTON LOGIC IS HERE
         private void button1_Click(object sender, EventArgs e)
         {
+            // Goes back to the customer portal screen.
             this.Hide();
             CustomerPortal customerPortal = new CustomerPortal();
             customerPortal.Show();
         }
 
-        // I HAD UI ISSUES ON MY END. THE REFRESH BUTTON SHOULD BE REPURPOSED TO BE CALLED DELETE CUSTOMER. PUT THIS LOGIC IN THE BUTTON CLICK METHOD FOR THAT BUTTON.
+        // Deletes the selected customers.
         private void refreshButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Button CLICKED");

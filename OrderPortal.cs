@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class OrderPortal : Form
     {
@@ -17,6 +17,7 @@ namespace ACME_Web_App
             InitializeComponent();
         }
 
+        // NEW ORDER FORM BUTTON
         private void newOrderButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -24,6 +25,7 @@ namespace ACME_Web_App
             newOrderForm.Show();
         }
 
+        // BACK ARROW
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

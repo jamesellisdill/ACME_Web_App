@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class CustomerPortal : Form
     {
@@ -19,6 +19,7 @@ namespace ACME_Web_App
 
         private void button4_Click(object sender, EventArgs e)
         {
+            // Goes back to the main portal screen.
             this.Hide();
             PortalScreen form3 = new PortalScreen();
             form3.Show();
@@ -26,6 +27,7 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Goes to the add customer screen.
             this.Hide();
             AddCustomerForm addCustomerForm = new AddCustomerForm();
             addCustomerForm.Show();
@@ -33,6 +35,7 @@ namespace ACME_Web_App
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Goes to the view/modify customer screen.
             this.Hide();
             EditCustomerForm editCustomerForm = new EditCustomerForm();
             editCustomerForm.Show();

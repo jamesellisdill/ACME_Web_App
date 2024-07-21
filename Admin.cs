@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public class Admin : User
     {

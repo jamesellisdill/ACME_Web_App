@@ -1,4 +1,4 @@
-﻿namespace ACME_Web_App
+﻿namespace ACME_App
 {
     partial class OrderPortal
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderPortal));
             this.newOrderButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow6;
+            this.button1.Image = global::ACME_App.Properties.Resources.reallysmallbackarrow6;
             this.button1.Location = new System.Drawing.Point(40, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 33);
@@ -59,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.newOrderButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OrderPortal";
             this.Text = "OrderPortal";
             this.ResumeLayout(false);

@@ -1,4 +1,4 @@
-using ACME_Web_App;
+using ACME_App;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace ACME_Web_App
+namespace ACME_App
 
 {
     public partial class Form1 : Form
@@ -25,6 +25,7 @@ namespace ACME_Web_App
 
         }
 
+        // Login fields.
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;

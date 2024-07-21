@@ -1,4 +1,4 @@
-﻿namespace ACME_Web_App
+﻿namespace ACME_App
 {
     partial class Form2
     {
@@ -90,7 +90,7 @@
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow;
+            this.button2.BackgroundImage = global::ACME_App.Properties.Resources.reallysmallbackarrow;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(12, 12);
             this.button2.Name = "button2";
@@ -101,7 +101,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.logo2;
+            this.pictureBox1.Image = global::ACME_App.Properties.Resources.logo2;
             this.pictureBox1.Location = new System.Drawing.Point(256, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(318, 127);

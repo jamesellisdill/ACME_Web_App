@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public abstract class User
     {

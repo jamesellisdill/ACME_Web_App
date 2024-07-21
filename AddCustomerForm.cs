@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_Web_App
+namespace ACME_App
 {
     public partial class AddCustomerForm : Form
     {
@@ -20,6 +20,7 @@ namespace ACME_Web_App
 
         private void addCustomerButton_Click(object sender, EventArgs e)
         {
+            // Takes user input and creates a new customer.
             string name = nameTextBox.Text;
             string address = addressTextBox.Text;
             bool isCapableOfLoading = isCapableOfLoadingCheckBox.Checked;
@@ -27,9 +28,10 @@ namespace ACME_Web_App
 
             Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
+            // Adds the customer to the customer database.
             Program.customersDatabase.AddCustomer(customer);
 
-            // CLEAR TEXTBOXES AFTER ADDING CUSTOMER
+            // Clears the fields after adding the customer.
             nameTextBox.Clear();
             addressTextBox.Clear();
             isCapableOfLoadingCheckBox.Checked = false;
@@ -45,6 +47,7 @@ namespace ACME_Web_App
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Goes back to the customer portal screen.
             this.Hide();
             CustomerPortal customerPortal = new CustomerPortal();
             customerPortal.Show();
