@@ -124,17 +124,20 @@
   <data name="reallySmallHomeButton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallySmallHomeButton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reallysmallbackarrow7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reallysmallbackarrow7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reallySmallHomeButton5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reallySmallHomeButton5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="smallbackarrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\smallbackarrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reallysmallbackarrow7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reallysmallbackarrow7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logoBlur" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logoBlur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logoBlur1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logoBlur1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoBlur2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoBlur2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +157,14 @@
   <data name="reallysmallbackarrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallysmallbackarrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blurlogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blurlogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoBlur1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoBlur1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blurlogo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blurlogo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reallySmallHomeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallySmallHomeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +196,7 @@
   <data name="reallysmallbackarrow4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reallysmallbackarrow4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reallySmallHomeButton5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reallySmallHomeButton5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logoBlur3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoBlur3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

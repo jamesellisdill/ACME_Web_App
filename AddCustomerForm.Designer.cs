@@ -38,8 +38,10 @@
             this.isCapableOfLoadingCheckBox = new System.Windows.Forms.CheckBox();
             this.addCustomerButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -131,13 +133,22 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(282, 361);
+            this.label1.Location = new System.Drawing.Point(332, 361);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(342, 29);
             this.label1.TabIndex = 10;
             this.label1.Text = "Customer Added!";
             this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.logoBlur2;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 319);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(292, 92);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
@@ -164,6 +175,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 412);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -178,6 +190,7 @@
             this.Controls.Add(this.nameLabel);
             this.Name = "AddCustomerForm";
             this.Text = "Add Customer";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +210,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
