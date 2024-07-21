@@ -19,6 +19,11 @@ namespace ACME_Web_App
             InitializeComponent();
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            errorLabel.Hide();
+        }
+
         // BACK ARROW
         private void button2_Click(object sender, EventArgs e)
         {
@@ -41,7 +46,7 @@ namespace ACME_Web_App
             }
             else
             {
-                // SHOW THE ERROR MESSAGE
+                errorLabel.Show();
             }
         }
     }

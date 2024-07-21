@@ -22,7 +22,7 @@ namespace ACME_Web_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            errorLabel.Hide();
         }
 
         // Login fields.
@@ -40,11 +40,15 @@ namespace ACME_Web_App
                     form2.Show();
                     return;
                 }
+                else
+                {
+                    errorLabel.Show();
+                }
             }
 
             // UNABLE TO LOGIN. 
             // QUEUE THE LOADING OF ERROR UI SCENE.
-            Console.WriteLine("UNABLE TO LOGIN ERROR");
+            //Console.WriteLine("UNABLE TO LOGIN ERROR");
         }
     }
 }

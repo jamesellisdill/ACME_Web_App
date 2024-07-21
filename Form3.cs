@@ -21,8 +21,8 @@ namespace ACME_Web_App
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.Show();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
 
         // CUSTOMER PORTAL

@@ -63,8 +63,8 @@ namespace ACME_Web_App
         // Deletes the selected customers.
         private void refreshButton_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Button CLICKED");
-            Console.WriteLine(Program.customersDatabase.GetCustomers());
+            //Console.WriteLine("Button CLICKED");
+            //Console.WriteLine(Program.customersDatabase.GetCustomers());
             foreach (ListViewItem item in editCustomerView.CheckedItems)
             {
                 Customer customer = (Customer)item.Tag;
@@ -74,7 +74,16 @@ namespace ACME_Web_App
                     editCustomerView.Items.Remove(item);
                 }
             }
-            Console.WriteLine("2nd check:" + Program.customersDatabase.GetCustomers());
+            //Console.WriteLine("2nd check:" + Program.customersDatabase.GetCustomers());
+
+            if (Program.customersDatabase.GetCustomers().Count > 0)
+            {
+                refreshLabel.Hide();
+            }
+            else
+            {
+                refreshLabel.Show();
+            }
         }
     }
 }

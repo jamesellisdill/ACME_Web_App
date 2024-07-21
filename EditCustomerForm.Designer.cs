@@ -121,7 +121,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListView editCustomerView;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.ColumnHeader columnHeader1;

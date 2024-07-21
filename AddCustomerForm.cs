@@ -20,24 +20,33 @@ namespace ACME_Web_App
 
         private void addCustomerButton_Click(object sender, EventArgs e)
         {
-            // Takes user input and creates a new customer.
-            string name = nameTextBox.Text;
-            string address = addressTextBox.Text;
-            bool isCapableOfLoading = isCapableOfLoadingCheckBox.Checked;
-            string deliveryHours = deliveryHoursTextBox.Text;
+            if (nameTextBox.Text == string.Empty || addressTextBox.Text == string.Empty || deliveryHoursTextBox.Text == string.Empty)
+            {
+                label1.Text = "Please enter all information!";
+                label1.Show();
+            }
+            else
+            {
+                // Takes user input and creates a new customer.
+                string name = nameTextBox.Text;
+                string address = addressTextBox.Text;
+                bool isCapableOfLoading = isCapableOfLoadingCheckBox.Checked;
+                string deliveryHours = deliveryHoursTextBox.Text;
 
-            Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
+                Customer customer = new Customer(name, address, isCapableOfLoading, deliveryHours);
 
-            // Adds the customer to the customer database.
-            Program.customersDatabase.AddCustomer(customer);
+                // Adds the customer to the customer database.
+                Program.customersDatabase.AddCustomer(customer);
 
-            // Clears the fields after adding the customer.
-            nameTextBox.Clear();
-            addressTextBox.Clear();
-            isCapableOfLoadingCheckBox.Checked = false;
-            deliveryHoursTextBox.Clear();
-            
-            label1.Visible = true;
+                // Clears the fields after adding the customer.
+                nameTextBox.Clear();
+                addressTextBox.Clear();
+                isCapableOfLoadingCheckBox.Checked = false;
+                deliveryHoursTextBox.Clear();
+
+                label1.Text = "Customer added!";
+                label1.Show();
+            }
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

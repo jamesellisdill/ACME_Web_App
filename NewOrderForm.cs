@@ -49,26 +49,36 @@ namespace ACME_Web_App
         // CREATE ORDER
         private void button1_Click(object sender, EventArgs e)
         {
-            Order order = Program.orderManager.CreateNewOrder();
-            Program.orderManager.AddToOrdersList(order);
-
-            foreach (ListViewItem item in listView1.CheckedItems)
+            if (listView1.CheckedItems.Count == 0)
             {
-                Product product = item.Tag as Product;
-                order.AddToOrder(product);
+                label1.Text = "Must select items to order!";
+                label1.Show();
+            }
+            else
+            {
+                Order order = Program.orderManager.CreateNewOrder();
+                Program.orderManager.AddToOrdersList(order);
 
-                //TESTING
-                Console.WriteLine($"Added to order: {product.ViewProductInfo()}");
+                foreach (ListViewItem item in listView1.CheckedItems)
+                {
+                    Product product = item.Tag as Product;
+                    order.AddToOrder(product);
+
+                    //TESTING
+                    //Console.WriteLine($"Added to order: {product.ViewProductInfo()}");
+                }
+
+                Program.orderManager.PlaceOrder(order);
+
+                string orderID = order.GetOrderID();
+                label2.Text = orderID;
+
+                // Shows the confirmation labels.
+                label1.Text = "Order placed! Here's your confirmation number:";
+                label1.Show();
+                label2.Show();
             }
 
-            Program.orderManager.PlaceOrder(order);
-
-            string orderID = order.GetOrderID();
-            label2.Text = orderID;
-
-            // Shows the confirmation labels.
-            label1.Show();
-            label2.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
