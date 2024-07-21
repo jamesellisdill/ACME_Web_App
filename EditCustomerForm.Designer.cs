@@ -35,8 +35,8 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.refreshButton = new System.Windows.Forms.Button();
-            this.refreshLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.refreshLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // editCustomerView
@@ -85,15 +85,6 @@
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
-            // refreshLabel
-            // 
-            this.refreshLabel.AutoSize = true;
-            this.refreshLabel.Location = new System.Drawing.Point(309, 236);
-            this.refreshLabel.Name = "refreshLabel";
-            this.refreshLabel.Size = new System.Drawing.Size(205, 13);
-            this.refreshLabel.TabIndex = 2;
-            this.refreshLabel.Text = "Click Refresh to update the Customer List!";
-            // 
             // button1
             // 
             this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow4;
@@ -103,6 +94,15 @@
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // refreshLabel
+            // 
+            this.refreshLabel.AutoSize = true;
+            this.refreshLabel.Location = new System.Drawing.Point(362, 240);
+            this.refreshLabel.Name = "refreshLabel";
+            this.refreshLabel.Size = new System.Drawing.Size(105, 13);
+            this.refreshLabel.TabIndex = 2;
+            this.refreshLabel.Text = "No customers found.";
             // 
             // EditCustomerForm
             // 
@@ -128,7 +128,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Label refreshLabel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label refreshLabel;
     }
 }
