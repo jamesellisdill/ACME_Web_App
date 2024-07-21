@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ACME_App.Properties
+namespace ACME_Web_App.Properties
 {
 
 

@@ -1,4 +1,4 @@
-﻿namespace ACME_App
+﻿namespace ACME_Web_App
 {
     partial class OrderPortal
     {
@@ -45,7 +45,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::ACME_App.Properties.Resources.reallysmallbackarrow6;
+            this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow6;
             this.button1.Location = new System.Drawing.Point(40, 37);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 33);

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ACME_App
+namespace ACME_Web_App
 {
     // INVENTORY STORES AND HANDLES EACH OF THE INDIVIDUAL PRODUCTS
     public class Inventory

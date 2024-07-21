@@ -1,4 +1,4 @@
-﻿namespace ACME_App
+﻿namespace ACME_Web_App
 {
     partial class CustomerPortal
     {
@@ -57,7 +57,7 @@
             // 
             // button4
             // 
-            this.button4.Image = global::ACME_App.Properties.Resources.reallysmallbackarrow1;
+            this.button4.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow1;
             this.button4.Location = new System.Drawing.Point(12, 12);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 31);
@@ -67,7 +67,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ACME_App.Properties.Resources.blurlogo2;
+            this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.blurlogo2;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 353);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(360, 95);

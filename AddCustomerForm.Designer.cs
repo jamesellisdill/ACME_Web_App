@@ -1,4 +1,4 @@
-﻿namespace ACME_App
+﻿namespace ACME_Web_App
 {
     partial class AddCustomerForm
     {
@@ -129,7 +129,7 @@
             // 
             // button1
             // 
-            this.button1.Image = global::ACME_App.Properties.Resources.reallysmallbackarrow2;
+            this.button1.Image = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow2;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(57, 31);

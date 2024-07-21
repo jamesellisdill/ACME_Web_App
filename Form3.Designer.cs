@@ -1,4 +1,4 @@
-﻿namespace ACME_App
+﻿namespace ACME_Web_App
 {
     partial class PortalScreen
     {
@@ -59,7 +59,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::ACME_App.Properties.Resources.reallysmallbackarrow;
+            this.button4.BackgroundImage = global::ACME_Web_App.Properties.Resources.reallysmallbackarrow;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Location = new System.Drawing.Point(12, 12);
             this.button4.Name = "button4";
@@ -70,7 +70,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ACME_App.Properties.Resources.blurlogo1;
+            this.pictureBox1.Image = global::ACME_Web_App.Properties.Resources.blurlogo1;
             this.pictureBox1.Location = new System.Drawing.Point(-8, 345);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(335, 109);

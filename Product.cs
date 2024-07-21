@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ACME_App
+namespace ACME_Web_App
 {
     // PRODUCT IS THE OBJECT FOR A GIVEN ENTRY IN THE INVENTORY DATABASE
     public class Product

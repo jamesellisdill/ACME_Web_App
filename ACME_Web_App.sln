@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME_App", "ACME_App.csproj", "{DB5973EE-1FFB-4D92-AD73-4C221898A7E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME_Web_App", "ACME_Web_App.csproj", "{DB5973EE-1FFB-4D92-AD73-4C221898A7E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
