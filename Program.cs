@@ -30,7 +30,7 @@ namespace ACME_Web_App
             inventory.LoadProducts();
             customersDatabase.LoadCustomers();
 
-            Application.Run(new Form1()); //Change this to pick which form appears first.
+            Application.Run(new ViewModifyCustomerForm()); //Change this to pick which form appears first.
         }
     }
 }

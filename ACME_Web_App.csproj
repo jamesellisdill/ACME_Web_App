@@ -105,6 +105,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Salesman.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="ViewModifyCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewModifyCustomerForm.Designer.cs">
+      <DependentUpon>ViewModifyCustomerForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCustomerForm.resx">
       <DependentUpon>AddCustomerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +145,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ViewModifyCustomerForm.resx">
+      <DependentUpon>ViewModifyCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
